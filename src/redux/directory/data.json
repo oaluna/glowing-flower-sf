@@ -1,0 +1,22 @@
+
+
+{
+    "title": "All Occasions",
+    "imageUrl": "url(../../images/allOccasions.jpg)",     
+    "id": 1,
+    "linkUrl": "shop/all-occasions"
+    },
+    {
+    "title": "Holiday",
+    "imageUrl": "url(../../images/handTiedBouquet.jpg)",     
+    "id": 2,
+    "linkUrl": "shop/holiday"
+    },
+    {
+    "title": "Deals",
+    "imageUrl": "url(../../images/roundTiedBouquet.jpg)",  
+    "size": "large",
+    "id": 5,
+    "linkUrl": "shop/deals"
+    }
+  
