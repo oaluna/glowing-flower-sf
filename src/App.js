@@ -1,6 +1,6 @@
 import "tailwindcss/dist/base.css";
 import "styles/globalStyles.css";
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
 /*
@@ -24,7 +24,7 @@ import AnimationRevealPage from "helpers/AnimationRevealPage.js";
  * separately
  */
 
- import Header from "components/headers/light.js"
+import Header from "components/headers/light.js"
 //import Hero from "components/hero/TwoColumnWithVideo.js";
 // import Hero from "components/hero/TwoColumnWithInput.js";
 // import Hero from "components/hero/TwoColumnWithFeaturesAndTestimonial.js";
@@ -95,15 +95,15 @@ import Footer from "components/footers/MiniCenteredFooter.js";
 /* Inner Pages */
 // import LoginPage from "pages/Login.js";
 // import SignupPage from "pages/Signup.js";
- //import PricingPage from "pages/Pricing.js";
- import AboutUsPage from "pages/AboutUs.js";
- import ContactUsPage from "pages/ContactUs.js";
+//import PricingPage from "pages/Pricing.js";
+import AboutUsPage from "pages/AboutUs.js";
+import ContactUsPage from "pages/ContactUs.js";
 // import BlogIndexPage from "pages/BlogIndex.js";
- import TermsOfServicePage from "pages/TermsOfService.js";
- import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
+import TermsOfServicePage from "pages/TermsOfService.js";
+import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
- import Home from "pages/Home.js";
- import ComponentRenderer from "ComponentRenderer.js";
+import Home from "pages/Home.js";
+import ComponentRenderer from "ComponentRenderer.js";
 //import MainLandingPage from "MainLandingPage.js";
 //import ThankYouPage from "ThankYouPage.js";
 
@@ -131,23 +131,25 @@ function App({ checkUserSession, currentUser }) {
   return (
 
     <AnimationRevealPage>
-    <Router>
-<Header />
+      <Router>
+        <Header />
 
-      <Switch>
-        <Route path="/components/:type/:subtype/:name">
-          <ComponentRenderer />
-        </Route>
-        <Route path="/components/:type/:name">
-          <ComponentRenderer />
-        </Route>
-        <Route path="/terms">
-          <TermsOfServicePage />
-        </Route>
-        <Route path="/privacy-policy">
-          <PrivacyPolicyPage />
-        </Route>
-        <Route path='/shop' component={ShopPage} />
+        <Switch>
+          <Route path="/components/:type/:subtype/:name">
+            <ComponentRenderer />
+          </Route>
+          <Route path="/components/:type/:name">
+            <ComponentRenderer />
+          </Route>
+          <Route path="/shop">
+            <ShopPage />
+          </Route>
+          <Route path="/terms">
+            <TermsOfServicePage />
+          </Route>
+          <Route path="/privacy-policy">
+            <PrivacyPolicyPage />
+          </Route>
           <Route exact path='/checkout' component={CheckoutPage} />
           <Route
             exact
@@ -160,24 +162,24 @@ function App({ checkUserSession, currentUser }) {
               )
             }
           />
-        {/* <Route path="/signup">
+          {/* <Route path="/signup">
           <SignupPage />
         </Route>
         <Route path="/login">
           <LoginPage />
         </Route> */}
-        <Route path="/about">
-          <AboutUsPage />
-        </Route>
-        <Route path="/contact">
-          <ContactUsPage />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
-<Footer />
-    </Router>
+          <Route path="/about">
+            <AboutUsPage />
+          </Route>
+          <Route path="/contact">
+            <ContactUsPage />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+        <Footer />
+      </Router>
     </AnimationRevealPage>
 
   );

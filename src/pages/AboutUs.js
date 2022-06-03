@@ -10,9 +10,9 @@ import MainFeature1 from "components/features/TwoColWithButton.js";
 // import MainFeature3 from "components/features/TwoColSingleFeatureWithStats2.js";
 import Features from "components/features/ThreeColSimple.js";
 // import Features from "components/features/ThreeColWithSideImage.js";
-import TeamCardGrid from "components/cards/ProfileThreeColGrid.js";
+//import TeamCardGrid from "components/cards/ProfileThreeColGrid.js";
 
-import logo from "images/glowing-flower.svg";
+import logo from "images/glowing-flowers.svg";
 
 import SupportIconImage from "images/support-icon.svg";
 import ShieldIconImage from "images/shield-icon.svg";
@@ -25,7 +25,7 @@ export default () => {
     <AnimationRevealPage>
       <MainFeature1
         subheading={<Subheading>
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" style={{transform: "scale(1.2)", margin: "2rem auto"}} />
         </Subheading>}
         heading="We are an artisanal flower shop located at one of San Francisco's most historic neighborhoods."
         buttonRounded={false}
@@ -48,20 +48,20 @@ export default () => {
           {
             imageSrc: SupportIconImage,
             title: "Quality and Love in Every Arrangement",
-            description: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport"
+            description: "We take the adequate amount of time to ensure that every arrangement is ideal for your occasion."
           },
           {
             imageSrc: ShieldIconImage,
           title: "A Smile With Every Order",
-            description: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport"
+            description: "We love what we do, and it shows when we package our arrangements in a manner that is unique to every order."
           },
           {
             imageSrc: CustomerLoveIconImage,
             title: "Customer Satisfaction",
-            description: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport"
+            description: "We promise that you will receive equal parts love and craftsmanship with your purchase. (TEMP)"
           },
         ]}
-        linkText=""
+        linkText="Shop Now"
       />
     </AnimationRevealPage>
   );

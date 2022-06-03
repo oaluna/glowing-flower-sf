@@ -50,6 +50,7 @@ export const OptionsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  z-index: 50;
   &:hover {
     color: goldenrod;
   }
@@ -60,7 +61,6 @@ export const OptionsContainer = styled.div`
 `
 
 export const OptionLink = styled(Link)`
-  z-index: 50;
   padding: 25px;
   height: 100%;
   font-size: 24px;
@@ -68,6 +68,7 @@ export const OptionLink = styled(Link)`
   text-shadow: 1px 0px 10px #000;
   font-weight: bold;
   cursor: pointer;
+  z-index: 75;
   &:hover {
     color: goldenrod;
   }

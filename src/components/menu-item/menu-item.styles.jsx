@@ -1,31 +1,27 @@
 import styled from 'styled-components'
 
 export const MenuItemContainer = styled.div`
-  height: 380px;
- max-width: 30%;
+  height: 280px;
+ max-width: 25%;
   overflow: hidden;
   flex: 1 1 auto;
   display: flex;
 
   align-items: center;
   justify-content: center;
-  border: none;
-  margin: 0 7.5px 15px;
+  border: 0px solid transparent;
+  margin: 0vh 5vw;
   overflow: hidden;
-  border-radius: 20% 0; 
-
+  border-radius: 25% 0; 
+  box-shadow: 0px 1.5px 6px rgba(0,0,0,0.3);
   &:hover {
     cursor: pointer;
     opacity: 1;
+    box-shadow: 0px 1.5px 12px rgba(0,0,0,0.45);
     & .background-image .content{
       transform: scale(1.1);
       transition: transform 2.2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
     }
-  &:first-child {
-    margin-right: 7.5px;
-  }
-  &:last-child {
-    margin-left: 7.5px;
   }
 
   @media screen and (max-width: 800px) {
@@ -40,9 +36,11 @@ export const MenuItemContainer = styled.div`
     border: 1px solid rgba(127, 17, 224, 0.3);
     margin: 0 7.5px 15px;
     overflow: hidden;
+
     &:hover {
     cursor: pointer;
     opacity: 1;
+
     & .background-image {
       transform: scale(1.1);
       transition: transform 2.2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
@@ -51,12 +49,7 @@ export const MenuItemContainer = styled.div`
       transition: transform 2.2s;
     }
   }
-  &:first-child {
-    margin-right: 7.5px;
-  }
-  &:last-child {
-    margin-left: 7.5px;
-  }
+
   }
 `
 
@@ -85,7 +78,7 @@ export const ContentContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(117, 117, 244, 1);
+  background: #312e81;
   border: 1px solid rgba(127, 17, 224, 0.3);
   
   position: absolute;
@@ -98,7 +91,7 @@ export const ContentContainer = styled.div`
   @media screen and (max-width: 800px) {
     opacity: 1;
   }
-`
+`;
 
 export const ContentTitle = styled.span`
   font-weight: bold;
@@ -109,7 +102,7 @@ export const ContentTitle = styled.span`
     color: navy;
     transition: 0.3s ease-in-out;
   }
-`
+`;
 
 export const ContentSubtitle = styled.span`
 
@@ -120,4 +113,4 @@ export const ContentSubtitle = styled.span`
     color: navy;
     transition: 0.3s ease-in-out;
   }
-`
+`;

@@ -42,8 +42,8 @@ const ProductData = [
   {
     imageSrc: minimalistBouquet,
     title: "Minimalist Bouquet",
-    description: "A compact flowers that arranged them using less number and variety of flowers instead using dry accessories, feathers, bamboo sticks, etc. It\’s combined artistically that\’s give it\’s clean modern look.",
-    fullDescription: "A compact flowers that arranged them using less number and variety of flowers instead using dry accessories, feathers, bamboo sticks, etc. It\’s combined artistically that\’s give it\’s clean modern look. Something for you to bring or send for a housewarming party, birthday, graduation or a thank you gift. It will stand in a unique stylist vase that incorporate to make look artistically stunning.",
+    description: "A compact flowers that arranged them using less number and variety of flowers instead using dry accessories, feathers, bamboo sticks, etc. It’s combined artistically that’s give it’s clean modern look.",
+    fullDescription: "A compact flowers that arranged them using less number and variety of flowers instead using dry accessories, feathers, bamboo sticks, etc. It’s combined artistically that’s give it’s clean modern look. Something for you to bring or send for a housewarming party, birthday, graduation or a thank you gift. It will stand in a unique stylist vase that incorporate to make look artistically stunning.",
     dimensions: "W-5” X H-15”-17” X D-4”",
     pricingText: "$57.00",
    
@@ -52,7 +52,7 @@ const ProductData = [
     imageSrc: roundTiedBouquet,
     title: "Round-tied Bouquet",
     description: "An evenly arranged a half  round shape hand tied bouquet in glass vase by using a few flower which mainly used roses, tulips, lily, garbera or designer unique choice.",
-    fullDescription: "An evenly arranged a half  round shape hand tied bouquet in glass vase by using a few flower which mainly used roses, tulips, lily, garbera or designer unique choice. It perfect for the bride on the wedding, anniversary, birthday or Valentine\’s day.",
+    fullDescription: "An evenly arranged a half  round shape hand tied bouquet in glass vase by using a few flower which mainly used roses, tulips, lily, garbera or designer unique choice. It perfect for the bride on the wedding, anniversary, birthday or Valentine’s day.",
     dimensions: "W-6” X H-12” X D-6”",
     pricingText: "$59.00",
    
@@ -60,8 +60,8 @@ const ProductData = [
   {
     imageSrc: centerpiece,
     title: "Centerpiece Arrangement",
-    description: "The florist\'s personal favorite style of center piece. A unique and curvy arrangement made with a varied selection of flowers and foliages.",
-    fullDescription: "The florist\'s personal favorite style of center piece. A unique and curvy arrangement made with snapdragon, stock, gladioli,  rose, hydrangea, lisianthus, carnations, mums, wax flowers, evangirium, curly willow and wrapped with pittosporum, bacchus, or other foliages perfect centerpieces for wedding reception, formal dining table.",
+    description: "The florist's personal favorite style of center piece. A unique and curvy arrangement made with a varied selection of flowers and foliages.",
+    fullDescription: "The florist's personal favorite style of center piece. A unique and curvy arrangement made with snapdragon, stock, gladioli,  rose, hydrangea, lisianthus, carnations, mums, wax flowers, evangirium, curly willow and wrapped with pittosporum, bacchus, or other foliages perfect centerpieces for wedding reception, formal dining table.",
     dimensions: "W-20”-22”X H-10”-12” X D-6”-8”",
     pricingText: "$59.50",
    
@@ -69,8 +69,8 @@ const ProductData = [
   {
     imageSrc: largeBouquet,
     title: "Large Arrangement",
-    description: "The oversized arrangement usually to decor for a big party or event to get the room attention. It\’s mostly use tropical materials blended  with local plants.",
-    fullDescription: "The oversized arrangement usually to decor for a big party or event to get the room attention. It\’s mostly use tropical materials blended  with local plants, such as leucodendron, protea, cushion button, ginger, heliconia, kale, anthurium hyacinth, curly willow, calla lily  and kangaroo pauw. They are stunning to be combined it together.",
+    description: "The oversized arrangement usually to decor for a big party or event to get the room attention. It’s mostly use tropical materials blended  with local plants.",
+    fullDescription: "The oversized arrangement usually to decor for a big party or event to get the room attention. It’s mostly use tropical materials blended  with local plants, such as leucodendron, protea, cushion button, ginger, heliconia, kale, anthurium hyacinth, curly willow, calla lily  and kangaroo pauw. They are stunning to be combined it together.",
     dimensions: "W-20”, D-6”, H-30”",
     pricingText: "$87.00",
    
@@ -78,8 +78,8 @@ const ProductData = [
   {
     imageSrc: weddingArrangement,
     title: "Wedding Arrangement",
-    description: "For big events such a wedding from boutonnières, bride & bridesmaids\’  hand bouquet, sweet fantasy backdrop and bride & groom garland\’  table, centerpieces, flower girls, cake, welcoming arrangement and many more as your budget.",
-    fullDescription: "For big events such a wedding from boutonnières, bride & bridesmaids\’  hand bouquet, sweet fantasy backdrop and bride & groom garland\’  table, centerpieces, flower girls, cake, welcoming arrangement and many more as your budget.Price range may vary based upon meeting.",
+    description: "For big events such a wedding from boutonnières, bride & bridesmaids’  hand bouquet, sweet fantasy backdrop and bride & groom garland’  table, centerpieces, flower girls, cake, welcoming arrangement and many more as your budget.",
+    fullDescription: "For big events such a wedding from boutonnières, bride & bridesmaids’  hand bouquet, sweet fantasy backdrop and bride & groom garland’  table, centerpieces, flower girls, cake, welcoming arrangement and many more as your budget.Price range may vary based upon meeting.",
     dimensions: "Arizona, RAK",
     pricingText: "$69.00 and Up",
    
@@ -114,8 +114,8 @@ const ProductData = [
   {
     imageSrc: comboArrangement,
     title: "Combo Arrangement",
-    description: "A duo, trio of  combo arrangements in one order it\’s an smart choice for your party event, staging for open house or for a regularly home decor arrangement for different areas. A combo order is specially made and make easy for you to create a set of color, shape and in the needs can corporate together.",
-    fullDescription: "A duo, trio of  combo arrangements in one order it\’s an smart choice for your party event, staging for open house or for a regularly home decor arrangement for different areas. A combo order is specially made and make easy for you to create a set of color, shape and in the needs can corporate together. A duo arrangements could order in the same similarity to each other or in different style (one arrangement for living room and the other arrangement for dining table). ",
+    description: "A duo, trio of  combo arrangements in one order it’s an smart choice for your party event, staging for open house or for a regularly home decor arrangement for different areas. A combo order is specially made and make easy for you to create a set of color, shape and in the needs can corporate together.",
+    fullDescription: "A duo, trio of  combo arrangements in one order it’s an smart choice for your party event, staging for open house or for a regularly home decor arrangement for different areas. A combo order is specially made and make easy for you to create a set of color, shape and in the needs can corporate together. A duo arrangements could order in the same similarity to each other or in different style (one arrangement for living room and the other arrangement for dining table). ",
     dimensions: "",
     pricingText: "$99.00 - $135.00",
    

@@ -1,6 +1,7 @@
 import React from "react";
 //import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import HomePage from "pages/homepage/homepage.component";
+import AboutUs from "./AboutUs";
 import MenuItemHeader from "components/menu-item/menu-item-header.component";
 import Hero from "components/hero/TwoColumnWithVideo.js";
 import MainFeature from "components/cards/ThreeColSlider.js";
@@ -14,6 +15,7 @@ const Home = () => (
   <MainFeature />
   <MenuItemHeader />
   <HomePage />
+  <AboutUs/>
   <Testimonial />
   </>
 )
