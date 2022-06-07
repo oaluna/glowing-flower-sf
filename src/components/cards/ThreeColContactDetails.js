@@ -4,7 +4,7 @@ import tw from "twin.macro";
 //eslint-disable-next-line
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
-import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons";
+//import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons";
 import { SectionDescription } from "components/misc/Typography.js";
 
 import { ReactComponent as SvgDecoratorBlob3 } from "images/svg-decorator-blob-3.svg";
@@ -64,23 +64,23 @@ export default ({ cards = null, heading = "Our Offices", subheading = "Locations
       title: "Secure",
       description: "We strictly only deal with vendors that provide top notch security."
     },
-    { 
+    {
       title: "24/7 Support",
       description: "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud."
     },
-    { 
+    {
       title: "Reliable",
       description: "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud."
     },
-    { 
+    {
       title: "Easy",
       description: "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud."
     },
-    { 
+    {
       title: "Customizable",
       description: "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud."
     },
-    { 
+    {
       title: "Fast",
       description: "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud."
     },

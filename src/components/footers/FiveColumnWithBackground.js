@@ -27,7 +27,6 @@ const ThreeColRow = tw.div`flex flex-col md:flex-row items-center justify-betwee
 
 const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
 const LogoImg = tw.img`w-8`;
-const LogoText = tw.h5`ml-2 text-xl font-black tracking-wider text-gray-100`;
 
 const CopywrightNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-400`;
 
@@ -142,9 +141,9 @@ export default () => {
         <ThreeColRow>
           <LogoContainer>
             <LogoImg src={LogoImage} />
-     
+
           </LogoContainer>
-          <CopywrightNotice>&copy; 2021 Chandra Tanuwijayua, website by 
+          <CopywrightNotice>&copy; 2021 Chandra Tanuwijayua, website by
           <a href="https://oscarluna.dev" target="_blank" rel="noopener noreferrer">Oscar Armando Luna</a>
           </CopywrightNotice>
           <SocialLinksContainer>

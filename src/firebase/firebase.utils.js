@@ -1,9 +1,8 @@
-
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-import { getAuth, GoogleAuthProvider } from 'firebase/auth';
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
-import { getAnalytics } from "firebase/analytics";
+//import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
   apiKey: "AIzaSyA9azSseaNwwRK7sHbPg4VmSkkOv-ihzpE",
@@ -12,7 +11,7 @@ const firebaseConfig = {
   storageBucket: "glowing-flower.appspot.com",
   messagingSenderId: "912214442669",
   appId: "1:912214442669:web:8670e14e63373f2dafbc24",
-  measurementId: "G-FP4QV6GRHK"
+  measurementId: "G-FP4QV6GRHK",
 };
 
 // Initialize Firebase
@@ -33,10 +32,10 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
         displayName,
         email,
         createdAt,
-        ...additionalData
+        ...additionalData,
       });
     } catch (error) {
-      console.log('error creating user', error.message);
+      console.log("error creating user", error.message);
     }
   }
 
@@ -50,7 +49,7 @@ export const addCollectionAndDocuments = async (
   const collectionRef = firestore.collection(collectionKey);
 
   const batch = firestore.batch();
-  objectsToAdd.forEach(obj => {
+  objectsToAdd.forEach((obj) => {
     const newDocRef = collectionRef.doc();
     batch.set(newDocRef, obj);
   });
@@ -58,15 +57,15 @@ export const addCollectionAndDocuments = async (
   return await batch.commit();
 };
 
-export const convertCollectionsSnapshotToMap = collections => {
-  const transformedCollection = collections.docs.map(doc => {
+export const convertCollectionsSnapshotToMap = (collections) => {
+  const transformedCollection = collections.docs.map((doc) => {
     const { title, items } = doc.data();
 
     return {
       routeName: encodeURI(title.toLowerCase()),
       id: doc.id,
       title,
-      items
+      items,
     };
   });
 
@@ -76,9 +75,34 @@ export const convertCollectionsSnapshotToMap = collections => {
   }, {});
 };
 
+export const convertBookingsSnapshotToMap = (bookings) => {
+  const transformedBooking = bookings.docs.map((doc) => {
+    const { eventTitle, date, time, service, name, phone, email, address } =
+      doc.data();
+
+    return {
+      routeName: encodeURI(eventTitle.toLowerCase()),
+      id: doc.id,
+      eventTitle,
+      date,
+      time,
+      service,
+      name,
+      phone,
+      email,
+      address
+    };
+  });
+
+  return transformedBooking.reduce((accumulator, booking) => {
+    accumulator[booking.eventTitle.toLowerCase()] = booking;
+    return booking;
+  }, {});
+};
+
 export const getCurrentUser = () => {
   return new Promise((resolve, reject) => {
-    const unsubscribe = auth.onAuthStateChanged(userAuth => {
+    const unsubscribe = auth.onAuthStateChanged((userAuth) => {
       unsubscribe();
       resolve(userAuth);
     }, reject);
@@ -89,7 +113,7 @@ export const auth = getAuth();
 export const firestore = getFirestore();
 
 export const provider = new GoogleAuthProvider();
-provider.setCustomParameters({ prompt: 'select_account' });
+provider.setCustomParameters({ prompt: "select_account" });
 export const signInWithGoogle = () => auth.signInWithPopup(provider);
 
 export default { auth, firestore };

@@ -43,6 +43,9 @@ export const LogoContainer = styled(Link)`
     display: none;
   }
 `
+export const LogoText = styled.h2`
+  font-family: "Rozha One", sans-serif;
+`;
 
 export const OptionsContainer = styled.div`
   width: 50%;

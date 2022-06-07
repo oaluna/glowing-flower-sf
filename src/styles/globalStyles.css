@@ -5,7 +5,7 @@ html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background: linear-gradient(145deg, rgba(32,42,68, .03) 10%, rgba(32, 42, 68, 0.09) 84%);
+    background: linear-gradient(145deg, rgba(32, 42, 68, .03) 10%, rgba(32, 42, 68, 0.09) 84%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -33,6 +33,7 @@ html {
 
 h1 {
     font-weight: 800;
+    font-family: "Montserrat", sans-serif;
     letter-spacing: -1px;
     font-size: 64px;
 }

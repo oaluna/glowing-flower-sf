@@ -15,8 +15,8 @@ export const CartContainer = styled.div`
 `;
 
 export const ShoppingIcon = styled.img`
-  width: 48px;
-  height: 48px;
+  width: 36px;
+  height: 36px;
   background: none;
   margin: 40px;
 `;

@@ -13,7 +13,16 @@ const port = process.env.PORT || 5000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(cors());
+app.use(
+  cors({
+    origin:
+      process.env.NODE_ENV === "production"
+        ? process.env.PRODUCTION_CLIENT_URL
+        : "http://localhost:3000",
+    credentials: true,
+  })
+);
+
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, 'client/build')));
@@ -27,6 +36,13 @@ app.listen(port, error => {
   if (error) throw error;
   console.log('Server running on port ' + port);
 });
+
+app.post('/booking', (req, res) => {
+  const body = {
+    source: req.body.token.id,
+    date: req.body.date
+  }
+})
 
 app.post('/payment', (req, res) => {
   const body = {

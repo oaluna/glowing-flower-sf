@@ -7,7 +7,7 @@ import Spinner from "components/with-spinner/with-spinner.component";
 
 // import CollectionsOverviewContainer from "components/collections-overview/collections-overview.container";
 import CollectionPageContainer from "pages/collection/collection.container";
-import SHOP_DATA from "./shop.data";
+//import SHOP_DATA from "./shop.data";
 
 const CollectionsOverviewContainer = lazy(() =>
   import("components/collections-overview/collections-overview.container")

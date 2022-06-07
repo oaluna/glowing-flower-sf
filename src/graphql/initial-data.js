@@ -3,7 +3,8 @@ const INITIAL_DATA = {
   cartItems: [],
   itemCount: 0,
   cartTotal: 0,
-  currentUser: null
+  currentUser: null,
+  bookings: []
 };
 
 export default INITIAL_DATA;

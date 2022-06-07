@@ -4,7 +4,6 @@ import tw from "twin.macro";
 //eslint-disable-next-line
 import { css } from "styled-components/macro";
 
-
 import ReactModalAdapter from "../../helpers/ReactModalAdapter.js";
 //import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
 
@@ -12,7 +11,7 @@ import ReactModalAdapter from "../../helpers/ReactModalAdapter.js";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-1.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "../../images/dot-pattern.svg";
-import video from "../../images/video.mp4"
+import video from "../../images/video.mp4";
 import DesignIllustration from "../../images/design-illustration.svg";
 
 const Container = tw.div`relative`;
@@ -50,7 +49,7 @@ const StyledModal = styled(ReactModalAdapter)`
     ${tw`fixed inset-0 z-50`}
   }
   &.mainHeroModal__content {
-    ${tw`xl:mx-auto m-4 sm:m-16 max-w-screen-xl absolute inset-0 flex justify-center items-center rounded-lg bg-gray-200 outline-none`}
+    ${tw`xl:mx-auto m-4 sm:m-16 max-w-screen-xl absolute inset-0 flex justify-center items-center rounded-lg bg-pink-900 outline-none`}
   }
   .content {
     ${tw`w-full lg:p-16`}
@@ -60,12 +59,12 @@ const CloseModalButton = tw.button`absolute top-0 right-0 mt-8 mr-8 hocus:text-i
 
 export default ({
   heading = "Artisanal, affordable Floral Arrangements Located at the Heart of San Francisco",
- description="Freshly cut floral arrangements, specially made to make every occasion unforgettable.",
+  description = "Freshly cut floral arrangements, specially made to make every occasion unforgettable.",
 
-primaryButtonUrl=`/shop`,
-primaryButtonText = `Shop Now`,
-  imageSrc=DesignIllustration,
-  imageCss=null,
+  primaryButtonUrl = `/shop`,
+  primaryButtonText = `Shop Now`,
+  imageSrc = DesignIllustration,
+  imageCss = null,
   imageDecoratorBlob = false,
 }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -74,21 +73,26 @@ primaryButtonText = `Shop Now`,
 
   return (
     <>
-    
       <Container>
         <TwoColumn>
           <LeftColumn>
             <Heading>{heading}</Heading>
             <Paragraph>{description}</Paragraph>
             <Actions>
-          <PrimaryButton as="a" href={primaryButtonUrl}>{primaryButtonText}</PrimaryButton>
+              <PrimaryButton as="a" href={primaryButtonUrl}>
+                {primaryButtonText}
+              </PrimaryButton>
             </Actions>
           </LeftColumn>
           <RightColumn>
             <IllustrationContainer>
-             <video autoplay="true" loop="true" muted="true">
-             <source style={{zIndex: 0}} src={video} type="video/mp4"></source>
-             </video>
+              <video autoplay="true" loop="true" muted="true">
+                <source
+                  style={{ zIndex: 0 }}
+                  src={video}
+                  type="video/mp4"
+                ></source>
+              </video>
               {imageDecoratorBlob && <DecoratorBlob2 />}
             </IllustrationContainer>
           </RightColumn>

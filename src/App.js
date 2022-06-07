@@ -83,6 +83,9 @@ import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 // import Footer from "components/footers/FiveColumnDark.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 
+import EventBookings from "pages/booking/booking.container.jsx";
+import BookingsSearchComponent from "components/bookings-search/bookings-search.component.jsx"
+
 /* Ready Made Pages (from demos folder) */
 // import EventLandingPage from "demos/EventLandingPage.js";
 // import HotelTravelLandingPage from "demos/HotelTravelLandingPage.js";
@@ -129,57 +132,53 @@ function App({ checkUserSession, currentUser }) {
 
 
   return (
-
     <AnimationRevealPage>
-    <Router>
-<Header />
+      <Router>
+        <Header />
 
-      <Switch>
-        <Route path="/components/:type/:subtype/:name">
-          <ComponentRenderer />
-        </Route>
-        <Route path="/components/:type/:name">
-          <ComponentRenderer />
-        </Route>
-        <Route path="/terms">
-          <TermsOfServicePage />
-        </Route>
-        <Route path="/privacy-policy">
-          <PrivacyPolicyPage />
-        </Route>
-        <Route path='/shop' component={ShopPage} />
-          <Route exact path='/checkout' component={CheckoutPage} />
+        <Switch>
+          <Route path="/components/:type/:subtype/:name">
+            <ComponentRenderer />
+          </Route>
+          <Route path="/components/:type/:name">
+            <ComponentRenderer />
+          </Route>
+          <Route path="/terms">
+            <TermsOfServicePage />
+          </Route>
+          <Route path="/privacy-policy">
+            <PrivacyPolicyPage />
+          </Route>
+          <Route path="/booking" component={EventBookings} />
+          <Route path="/booking-search/:type/:name" component={BookingsSearchComponent} />
+          <Route path="/shop" component={ShopPage} />
+          <Route exact path="/checkout" component={CheckoutPage} />
           <Route
             exact
-            path='/signin'
+            path="/signin"
             render={() =>
-              currentUser ? (
-                <Redirect to='/' />
-              ) : (
-                <SignInAndSignUpPage />
-              )
+              currentUser ? <Redirect to="/" /> : <SignInAndSignUpPage />
             }
           />
-        {/* <Route path="/signup">
+          {/* <Route path="/signup">
           <SignupPage />
         </Route>
         <Route path="/login">
           <LoginPage />
         </Route> */}
-        <Route path="/about">
-          <AboutUsPage />
-        </Route>
-        <Route path="/contact">
-          <ContactUsPage />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
-<Footer />
-    </Router>
+          <Route path="/about">
+            <AboutUsPage />
+          </Route>
+          <Route path="/contact">
+            <ContactUsPage />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+        <Footer />
+      </Router>
     </AnimationRevealPage>
-
   );
 }
 

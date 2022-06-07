@@ -1,5 +1,5 @@
 import React from "react";
-import tw, {styled} from "twin.macro";
+import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/TwoColumnWithVideo.js";
@@ -38,7 +38,7 @@ export default () => {
         subheading={<Subheading>Established 2022</Subheading>}
         heading={
           <>
-            Located at the 
+            Located at the
             <wbr /> <HighlightedText>heart</HighlightedText>
             of San Francisco
           </>

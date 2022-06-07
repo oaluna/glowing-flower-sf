@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import TeamIllustrationSrc from "images/team-illustration-2.svg";
+//import TeamIllustrationSrc from "images/team-illustration-2.svg";
 import featureFlowers from "images/feature-flowers.jpg";
 import {ReactComponent as SvgDotPattern } from "images/dot-pattern.svg"
 
@@ -22,7 +22,7 @@ const Image = styled.img(props => [
   props.imageRounded && tw`rounded`,
   props.imageBorder && tw`border`,
   props.imageShadow && tw`shadow`,
-  
+
 ]);
 
 const DecoratorBlob = styled(SvgDotPattern)(props => [
