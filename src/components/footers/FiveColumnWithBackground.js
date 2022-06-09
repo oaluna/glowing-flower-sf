@@ -27,10 +27,7 @@ const ThreeColRow = tw.div`flex flex-col md:flex-row items-center justify-betwee
 
 const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
 const LogoImg = tw.img`w-8`;
-<<<<<<< HEAD
-=======
 //const LogoText = tw.h5`ml-2 text-xl font-black tracking-wider text-gray-100`;
->>>>>>> 0fb97c7e1f945202459c4ffd39d15fc1b94d2665
 
 const CopywrightNotice = tw.p`text-center text-sm sm:text-base mt-8 md:mt-0 font-medium text-gray-400`;
 

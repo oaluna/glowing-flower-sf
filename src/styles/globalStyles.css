@@ -5,9 +5,6 @@ html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-<<<<<<< HEAD
-    background: linear-gradient(145deg, rgba(32, 42, 68, .03) 10%, rgba(32, 42, 68, 0.09) 84%);
-=======
     background: #D3CCE3;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
@@ -15,7 +12,6 @@ html {
     background: linear-gradient(to right, #E9E4F0, #D3CCE3);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
->>>>>>> 0fb97c7e1f945202459c4ffd39d15fc1b94d2665
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

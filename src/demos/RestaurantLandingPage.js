@@ -1,10 +1,6 @@
 import React from "react";
 import tw from "twin.macro";
-<<<<<<< HEAD
-import { css } from "styled-components/macro"; //eslint-disable-line
-=======
 //import { css } from "styled-components/macro"; //eslint-disable-line
->>>>>>> 0fb97c7e1f945202459c4ffd39d15fc1b94d2665
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/TwoColumnWithVideo.js";
 import Features from "components/features/ThreeColSimple.js";

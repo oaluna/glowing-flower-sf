@@ -25,8 +25,8 @@ import cityRose from "../images/arrangements/citys-rose-design.png";
 import citysTulips from "../images/arrangements/citys-tulips-design.png";
 import contemporary from "../images/arrangements/contemporary-design.png";
 import cosmopolitan from "../images/arrangements/cosmopolitan-design.png";
-import cosmopolitanAlt from "../images/arrangements/cosmopolitan-design-alt.png";
-import fathersDay from "../images/arrangements/masculinity-fathers-day.png";
+//import cosmopolitanAlt from "../images/arrangements/cosmopolitan-design-alt.png";
+import fathersDay from "../images/arrangements/masculine-fathers-day.png";
 import metropolitan from "../images/arrangements/metropolitan-design.png";
 import neonLightCity from "../images/arrangements/neon-light-city-design.png";
 import phaelenopsisOrchidGarden from "../images/arrangements/phaelenopsis-orchid-garden.png";
@@ -184,7 +184,7 @@ const ProductData = [
     pricingText: "",
   },
   {
-    imageSrc: [cosmopolitan, cosmopolitanAlt],
+    imageSrc: cosmopolitan,
     title: "",
     description: "",
     fullDescription: "",
