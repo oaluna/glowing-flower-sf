@@ -83,8 +83,8 @@ import Header from "components/headers/light.js"
 // import Footer from "components/footers/FiveColumnDark.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 
-import EventBookings from "pages/booking/booking.container.jsx";
-import BookingsSearchComponent from "components/bookings-search/bookings-search.component.jsx"
+//import EventBookings from "pages/booking/booking.container.jsx";
+//import BookingsSearchComponent from "components/bookings-search/bookings-search.component.jsx"
 
 /* Ready Made Pages (from demos folder) */
 // import EventLandingPage from "demos/EventLandingPage.js";
@@ -143,26 +143,17 @@ function App({ checkUserSession, currentUser }) {
           <Route path="/components/:type/:name">
             <ComponentRenderer />
           </Route>
-<<<<<<< HEAD
-=======
+
           <Route path="/shop">
             <ShopPage />
           </Route>
->>>>>>> 0fb97c7e1f945202459c4ffd39d15fc1b94d2665
-          <Route path="/terms">
+<Route path="/terms">
             <TermsOfServicePage />
           </Route>
           <Route path="/privacy-policy">
             <PrivacyPolicyPage />
           </Route>
-<<<<<<< HEAD
-          <Route path="/booking" component={EventBookings} />
-          <Route path="/booking-search/:type/:name" component={BookingsSearchComponent} />
-          <Route path="/shop" component={ShopPage} />
-          <Route exact path="/checkout" component={CheckoutPage} />
-=======
           <Route exact path='/checkout' component={CheckoutPage} />
->>>>>>> 0fb97c7e1f945202459c4ffd39d15fc1b94d2665
           <Route
             exact
             path="/signin"
