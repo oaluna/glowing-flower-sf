@@ -29,7 +29,7 @@ import cosmopolitanAlt from "../images/arrangements/cosmopolitan-design-alt.png"
 import fathersDay from "../images/arrangements/masculinity-fathers-day-design.png";
 import metropolitan from "../images/arrangements/metropolitan-design.png";
 import neonLightCity from "../images/arrangements/neon-light-city-design.png";
-import phaelenopsisOrchidGarden from "../images/arrangements/phaelenopsis-orchid-garden-design.png";
+import phaelenopsisOrchidGarden from "../images/arrangements/phaelenopsis-orchid-garden.png";
 
 const ProductData = [
   {
