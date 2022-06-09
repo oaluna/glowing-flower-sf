@@ -6,7 +6,7 @@ import {
 } from '../../firebase/firebase.utils';
 
 export const fetchCollectionsStart = () => ({
-  type: ShopActionTypes.FETCH_COLLECTIONS_START,
+  type: ShopActionTypes.FETCH_COLLECTIONS_START
 });
 
 export const fetchCollectionsSuccess = collectionsMap => ({
@@ -18,11 +18,6 @@ export const fetchCollectionsFailure = errorMessage => ({
   type: ShopActionTypes.FETCH_COLLECTIONS_FAILURE,
   payload: errorMessage
 });
-
-export const fetchContactInfoStart = contactInfo => ({
-  type: ShopActionTypes.FETCH_CONTACT_INFO_START,
-  payload: contactInfo
-})
 
 export const fetchCollectionsStartAsync = () => {
   return dispatch => {

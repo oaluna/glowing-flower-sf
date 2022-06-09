@@ -19,7 +19,7 @@ import {
 
 //import { ReactComponent as Logo } from "../../assets/crown.svg";
 
-const Header = ({ currentUser, hidden, signOutStart }) => (
+const Header = ({ currentUser, hidden, emailSignInStart, signOutStart }) => (
   <HeaderContainer>
     <LogoContainer>
       <OptionLink to="/">{/* <Logo className='logo' /> */}</OptionLink>
@@ -37,9 +37,13 @@ const Header = ({ currentUser, hidden, signOutStart }) => (
           SIGN OUT
         </OptionLink>
       ) : (
+<<<<<<< HEAD
         <OptionLink to="/signin" style={{ zIndex: 500 }}>
           SIGN IN
         </OptionLink>
+=======
+        <OptionLink to='/signin' onClick={emailSignInStart}>SIGN IN</OptionLink>
+>>>>>>> 0fb97c7e1f945202459c4ffd39d15fc1b94d2665
       )}
       <CartIcon />
     </OptionsContainer>

@@ -7,7 +7,7 @@ import { ReactComponent as FacebookIcon } from "../../images/facebook-icon.svg";
 import { ReactComponent as TwitterIcon } from "../../images/twitter-icon.svg";
 import { ReactComponent as YoutubeIcon } from "../../images/youtube-icon.svg";
 
-import logo from "images/glowing-flower.svg";
+import logo from "images/glowing-flowers.svg";
 
 
 const Container = tw(ContainerBase)`bg-indigo-500 text-gray-100 -mx-8 -mb-8`
@@ -15,7 +15,7 @@ const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 
 const Row = tw.div`flex items-center justify-center flex-col px-8`
 
-const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
+const LogoContainer = tw.div`flex items-center justify-center md:justify-start max-w-2xl`;
 const LogoImg = tw.img``;
 //const LogoText = tw.h5`ml-2 text-2xl font-black tracking-wider`;
 

@@ -1,6 +1,6 @@
 import "tailwindcss/dist/base.css";
 import "styles/globalStyles.css";
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
 /*
@@ -24,7 +24,7 @@ import AnimationRevealPage from "helpers/AnimationRevealPage.js";
  * separately
  */
 
- import Header from "components/headers/light.js"
+import Header from "components/headers/light.js"
 //import Hero from "components/hero/TwoColumnWithVideo.js";
 // import Hero from "components/hero/TwoColumnWithInput.js";
 // import Hero from "components/hero/TwoColumnWithFeaturesAndTestimonial.js";
@@ -98,15 +98,15 @@ import BookingsSearchComponent from "components/bookings-search/bookings-search.
 /* Inner Pages */
 // import LoginPage from "pages/Login.js";
 // import SignupPage from "pages/Signup.js";
- //import PricingPage from "pages/Pricing.js";
- import AboutUsPage from "pages/AboutUs.js";
- import ContactUsPage from "pages/ContactUs.js";
+//import PricingPage from "pages/Pricing.js";
+import AboutUsPage from "pages/AboutUs.js";
+import ContactUsPage from "pages/ContactUs.js";
 // import BlogIndexPage from "pages/BlogIndex.js";
- import TermsOfServicePage from "pages/TermsOfService.js";
- import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
+import TermsOfServicePage from "pages/TermsOfService.js";
+import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
- import Home from "pages/Home.js";
- import ComponentRenderer from "ComponentRenderer.js";
+import Home from "pages/Home.js";
+import ComponentRenderer from "ComponentRenderer.js";
 //import MainLandingPage from "MainLandingPage.js";
 //import ThankYouPage from "ThankYouPage.js";
 
@@ -143,16 +143,26 @@ function App({ checkUserSession, currentUser }) {
           <Route path="/components/:type/:name">
             <ComponentRenderer />
           </Route>
+<<<<<<< HEAD
+=======
+          <Route path="/shop">
+            <ShopPage />
+          </Route>
+>>>>>>> 0fb97c7e1f945202459c4ffd39d15fc1b94d2665
           <Route path="/terms">
             <TermsOfServicePage />
           </Route>
           <Route path="/privacy-policy">
             <PrivacyPolicyPage />
           </Route>
+<<<<<<< HEAD
           <Route path="/booking" component={EventBookings} />
           <Route path="/booking-search/:type/:name" component={BookingsSearchComponent} />
           <Route path="/shop" component={ShopPage} />
           <Route exact path="/checkout" component={CheckoutPage} />
+=======
+          <Route exact path='/checkout' component={CheckoutPage} />
+>>>>>>> 0fb97c7e1f945202459c4ffd39d15fc1b94d2665
           <Route
             exact
             path="/signin"
