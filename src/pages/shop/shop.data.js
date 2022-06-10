@@ -1,157 +1,176 @@
+import asymmetricCenterpiece from "../images/arrangements/asymmetric-centerpiece-design.png";
+import bigCity from "../images/arrangements/big-city-design.png";
+import cityComboTwoInOneAlt from "../images/arrangements/city-combo-two-in-one-alt.png";
+import cityFlowers from "../images/arrangements/city-flowers-design.png";
+import cityFuneral from "../images/arrangements/city-funeral-combo.png";
+import cityMiniSucculentGarden from "../images/arrangements/city-mini-succulent-garden.png";
+import cityWedding from "../images/arrangements/city-wedding-combo.png";
+import cityRose from "../images/arrangements/citys-rose-design.png";
+import citysTulips from "../images/arrangements/citys-tulips-design.png";
+import contemporary from "../images/arrangements/contemporary-design.png";
+import cosmopolitan from "../images/arrangements/cosmopolitan-design.png";
+import fathersDay from "../images/arrangements/masculine-fathers-day.png";
+import metropolitan from "../images/arrangements/metropolitan-design.png";
+import neonLightCity from "../images/arrangements/neon-light-city-design.png";
+import phaelenopsisOrchidGarden from "../images/arrangements/phaelenopsis-orchid-garden.png";
+
 const SHOP_DATA = [
   {
-    id: 1,
-    title: 'All Occasions',
-    routeName: 'all-occasions',
+    id: 100,
+    name: "All Occasions",
+    routeName: "all-occasions",
     items: [
       {
-        id: 1,
-        name: 'Brown Brim',
-        imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
-        price: 25
+        id:1,
+        imageUrl: cosmopolitan,
+        name: "Cosmopolitan",
+        description: "",
+        fullDescription: "",
+        dimensions: "",
+        pricingText: "",
       },
       {
-        id: 2,
-        name: 'Blue Beanie',
-        imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
-        price: 18
+        id:2,
+        imageUrl: contemporary,
+        name: "Contemporary",
+        description: "",
+        fullDescription: "",
+        dimensions: "",
+        pricingText: "",
       },
       {
-        id: 3,
-        name: 'Brown Cowboy',
-        imageUrl: 'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
-        price: 35
+        id:3,
+        imageUrl: citysTulips,
+        name: "City's Tulips",
+        description: "",
+        fullDescription: "",
+        dimensions: "",
+        pricingText: "",
       },
       {
-        id: 4,
-        name: 'Grey Brim',
-        imageUrl: 'https://i.ibb.co/RjBLWxB/grey-brim.png',
-        price: 25
+        id:4,
+        imageUrl: cityRose,
+        name: "City's Rose",
+        description: "",
+        fullDescription: "",
+        dimensions: "",
+        pricingText: "",
       },
       {
-        id: 5,
-        name: 'Green Beanie',
-        imageUrl: 'https://i.ibb.co/YTjW3vF/green-beanie.png',
-        price: 18
+        id:5,
+        imageUrl: cityWedding,
+        name: "City's Wedding",
+        description: "",
+        fullDescription: "",
+        dimensions: "",
+        pricingText: "",
       },
       {
-        id: 6,
-        name: 'Palm Tree Cap',
-        imageUrl: 'https://i.ibb.co/rKBDvJX/palm-tree-cap.png',
-        price: 14
+        id:6,
+        imageUrl: cityMiniSucculentGarden,
+        name: "City's Mini Succulent Garden",
+        description: "",
+        fullDescription: "",
+        dimensions: "",
+        pricingText: "",
       },
       {
-        id: 7,
-        name: 'Red Beanie',
-        imageUrl: 'https://i.ibb.co/bLB646Z/red-beanie.png',
-        price: 18
+        id:7,
+        imageUrl: cityFuneral,
+        name: "City's Funeral",
+        description: "",
+        fullDescription: "",
+        dimensions: "",
+        pricingText: "",
       },
-      {
-        id: 8,
-        name: 'Wolf Cap',
-        imageUrl: 'https://i.ibb.co/1f2nWMM/wolf-cap.png',
-        price: 14
-      },
-      {
-        id: 9,
-        name: 'Blue Snapback',
-        imageUrl: 'https://i.ibb.co/X2VJP2W/blue-snapback.png',
-        price: 16
-      }
-    ]
+    ],
   },
   {
-    id: 2,
-    title: 'Holiday',
-    routeName: 'holiday',
+    id: 200,
+    name: "Holiday",
+    routeName: "holiday",
     items: [
       {
-        id: 10,
-        name: 'Adidas NMD',
-        imageUrl: 'https://i.ibb.co/0s3pdnc/adidas-nmd.png',
-        price: 220
+        id:8,
+        imageUrl: cityFlowers,
+        name: "City's Flowers",
+        description: "",
+        fullDescription: "",
+        dimensions: "",
+        pricingText: "",
       },
       {
-        id: 11,
-        name: 'Adidas Yeezy',
-        imageUrl: 'https://i.ibb.co/dJbG1cT/yeezy.png',
-        price: 280
+        id:9,
+        imageUrl: cityComboTwoInOneAlt,
+        name: "City's Combo - 2 In 1",
+        description: "",
+        fullDescription: "",
+        dimensions: "",
+        pricingText: "",
       },
       {
-        id: 12,
-        name: 'Black Converse',
-        imageUrl: 'https://i.ibb.co/bPmVXyP/black-converse.png',
-        price: 110
+        id:10,
+        imageUrl: bigCity,
+        name: "Big City",
+        description: "",
+        fullDescription: "",
+        dimensions: "",
+        pricingText: "",
       },
       {
-        id: 13,
-        name: 'Nike White AirForce',
-        imageUrl: 'https://i.ibb.co/1RcFPk0/white-nike-high-tops.png',
-        price: 160
+        id:11,
+        imageUrl: asymmetricCenterpiece,
+        name: "Asymmetric Centerpiece",
+        description: "",
+        fullDescription: "",
+        dimensions: "",
+        pricingText: "",
       },
-      {
-        id: 14,
-        name: 'Nike Red High Tops',
-        imageUrl: 'https://i.ibb.co/QcvzydB/nikes-red.png',
-        price: 160
-      },
-      {
-        id: 15,
-        name: 'Nike Brown High Tops',
-        imageUrl: 'https://i.ibb.co/fMTV342/nike-brown.png',
-        price: 160
-      },
-      {
-        id: 16,
-        name: 'Air Jordan Limited',
-        imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
-        price: 190
-      },
-      {
-        id: 17,
-        name: 'Timberlands',
-        imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
-        price: 200
-      }
-    ]
+    ],
   },
   {
-    id: 3,
-    title: 'Best Wishes',
-    routeName: 'best-wishes',
+    id: 300,
+    name: "Decor",
+    routeName: "decor",
     items: [
       {
-        id: 18,
-        name: 'Black Jean Shearling',
-        imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
-        price: 125
+        id:12,
+        imageUrl: phaelenopsisOrchidGarden,
+        name: "Phaelenopsis Orchid Garden",
+        description: "",
+        fullDescription: "",
+        dimensions: "",
+        pricingText: "",
       },
       {
-        id: 19,
-        name: 'Blue Jean Jacket',
-        imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
-        price: 90
+        id:13,
+        imageUrl: neonLightCity,
+        name: "Neon Light City",
+        description: "",
+        fullDescription: "",
+        dimensions: "",
+        pricingText: "",
       },
       {
-        id: 20,
-        name: 'Grey Jean Jacket',
-        imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
-        price: 90
+        id:14,
+        imageUrl: metropolitan,
+        name: "Metropolitan",
+        description: "",
+        fullDescription: "",
+        dimensions: "",
+        pricingText: "",
       },
       {
-        id: 21,
-        name: 'Brown Shearling',
-        imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
-        price: 165
+        id:15,
+        imageUrl: fathersDay,
+        name: "Father's Day Special",
+        description: "",
+        fullDescription: "",
+        dimensions: "",
+        pricingText: "",
       },
-      {
-        id: 22,
-        name: 'Tan Trench',
-        imageUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
-        price: 185
-      }
-    ]
-  }
+    ],
+  },
 ];
 
-export default SHOP_DATA; 
+export default SHOP_DATA;

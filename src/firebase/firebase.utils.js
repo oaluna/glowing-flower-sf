@@ -59,43 +59,43 @@ export const addCollectionAndDocuments = async (
 
 export const convertCollectionsSnapshotToMap = (collections) => {
   const transformedCollection = collections.docs.map((doc) => {
-    const { title, items } = doc.data();
+    const { name, items } = doc.data();
 
     return {
-      routeName: encodeURI(title.toLowerCase()),
+      routeName: encodeURI(name.toLowerCase()),
       id: doc.id,
-      title,
+      name,
       items,
     };
   });
 
   return transformedCollection.reduce((accumulator, collection) => {
-    accumulator[collection.title.toLowerCase()] = collection;
+    accumulator[collection.name.toLowerCase()] = collection;
     return accumulator;
   }, {});
 };
 
 export const convertBookingsSnapshotToMap = (bookings) => {
   const transformedBooking = bookings.docs.map((doc) => {
-    const { eventTitle, date, time, service, name, phone, email, address } =
+    const { eventName, date, time, service, name, phone, email, address } =
       doc.data();
 
     return {
-      routeName: encodeURI(eventTitle.toLowerCase()),
+      routeName: encodeURI(eventName.toLowerCase()),
       id: doc.id,
-      eventTitle,
+      eventName,
       date,
       time,
       service,
       name,
       phone,
       email,
-      address
+      address,
     };
   });
 
   return transformedBooking.reduce((accumulator, booking) => {
-    accumulator[booking.eventTitle.toLowerCase()] = booking;
+    accumulator[booking.eventName.toLowerCase()] = booking;
     return booking;
   }, {});
 };

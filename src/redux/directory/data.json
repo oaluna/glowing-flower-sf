@@ -1,22 +1,24 @@
 
 
 {
+    {
     "title": "All Occasions",
-    "imageUrl": "url(../../images/allOccasions.jpg)",     
+    "imageUrl": "url(images/arrangements/big-city-design.png)",
     "id": 1,
     "linkUrl": "shop/all-occasions"
     },
     {
     "title": "Holiday",
-    "imageUrl": "url(../../images/handTiedBouquet.jpg)",     
+    "imageUrl": "url(images/arrangements/citys-tulips-design.png)",
     "id": 2,
     "linkUrl": "shop/holiday"
     },
     {
     "title": "Deals",
-    "imageUrl": "url(../../images/roundTiedBouquet.jpg)",  
+    "imageUrl": "url(images/arrangements/cosmopolitan.png)",
     "size": "large",
     "id": 5,
     "linkUrl": "shop/deals"
     }
-  
+}
+

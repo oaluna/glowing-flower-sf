@@ -36,14 +36,14 @@ const NextButton = tw(ControlButton)``;
 
 const CardSlider = styled(Slider)`
   ${tw`mt-16`}
-  .slick-track { 
+  .slick-track {
     ${tw`flex`}
   }
   .slick-slide {
     ${tw`h-auto flex justify-center mb-1`}
   }
 `;
-const Card = tw.div`h-full hover:shadow-xl flex! flex-col sm:border-none max-w-xs sm:rounded-tl-4xl sm:rounded-br-5xl relative outline-none shadow-none`;
+const Card = tw.div`h-full hover:shadow-xl flex! flex-col sm:border-none max-w-sm sm:rounded-tl-4xl sm:rounded-br-5xl relative outline-none shadow-none`;
 const CardImage = styled.div(props => [
   `background-image: url("${props.imageSrc}");
   z-index:40;`,
@@ -128,7 +128,7 @@ export default () => {
             <Card key={index}>
             <BackgroundImageOverlay/>
               <CardImage imageSrc={product.imageSrc} />
-              
+
               <TextInfo>
                 <TitleReviewContainer>
                   <Title>{product.title}</Title>

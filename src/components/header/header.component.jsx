@@ -30,14 +30,16 @@ const Header = ({ currentUser, hidden, emailSignInStart, signOutStart }) => (
 
     <OptionsContainer>
       <OptionLink to="/shop">SHOP</OptionLink>
-      <OptionLink to="/bookings">BOOK</OptionLink>
+      <OptionLink to="/booking">BOOK</OptionLink>
       <OptionLink to="/contact">CONTACT</OptionLink>
       {currentUser ? (
         <OptionLink as="div" onClick={signOutStart}>
           SIGN OUT
         </OptionLink>
       ) : (
-        <OptionLink to='/signin' onClick={emailSignInStart}>SIGN IN</OptionLink>
+        <OptionLink to="/signin" onClick={emailSignInStart}>
+          SIGN IN
+        </OptionLink>
       )}
       <CartIcon />
     </OptionsContainer>

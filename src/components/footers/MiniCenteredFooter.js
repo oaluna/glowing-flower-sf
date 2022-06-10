@@ -41,11 +41,11 @@ export default () => {
 
           </LogoContainer>
           <LinksContainer>
-            <Link href="#">Home</Link>
-            <Link href="#">About</Link>
-            <Link href="#">Contact Us</Link>
-            <Link href="#">Blog</Link>
-            <Link href="#">Reviews</Link>
+            <Link href="/about">About</Link>
+            <Link href="/shop">Shop</Link>
+            <Link href="/booking">Book</Link>
+            <Link href="/contact">Contact Us</Link>
+
           </LinksContainer>
           <SocialLinksContainer>
             <SocialLink href="https://facebook.com">
@@ -59,7 +59,7 @@ export default () => {
             </SocialLink>
           </SocialLinksContainer>
           <CopyrightText>
-            &copy; Copyright 2020, Chandra Tanuwijaya. Website by <a href="https://oscarluna.dev" style={{fontSize: "15px"}}>{""}Oscar Armando Luna{""}</a> All Rights Reserved.
+            &copy; Copyright 2022, Chandra Tanuwijaya. Website by <a href="https://oscarluna.dev" style={{fontSize: "15px"}}>{""}Oscar Armando Luna{""}</a> All Rights Reserved.
           </CopyrightText>
         </Row>
       </Content>

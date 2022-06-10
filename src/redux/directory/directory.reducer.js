@@ -1,29 +1,29 @@
-import comboArrangement from "images/comboArrangement.jpg";
-import handTiedBouquet from "images/handTiedBouquet.jpg";
-import roundTiedBouquet from "images/roundTiedBouquet.jpg";
+import cosmopolitan from "images/arrangements/cosmopolitan-design.png";
+import cityFlowers from "images/arrangements/city-flowers-design.png";
+import metropolitan from "images/arrangements/metropolitan-design.png";
 
 const INITIAL_STATE = {
   sections: [
     {
       title: "All Occasions",
-      imageUrl: comboArrangement,     
+      imageUrl: cityFlowers,
       id: 1,
-      linkUrl: "shop/all-occasions"
-      },
-      {
+      linkUrl: "shop/all-occasions",
+    },
+    {
       title: "Holiday",
-      imageUrl: handTiedBouquet,     
+      imageUrl: metropolitan,
       id: 2,
-      linkUrl: "shop/holiday"
-      },
-      {
+      linkUrl: "shop/holiday",
+    },
+    {
       title: "Deals",
-      imageUrl: roundTiedBouquet,  
+      imageUrl: cosmopolitan,
       size: "large",
       id: 5,
-      linkUrl: "shop/deals"
-      }
-  ]
+      linkUrl: "shop/deals",
+    },
+  ],
 };
 
 const directoryReducer = (state = INITIAL_STATE, action) => {
