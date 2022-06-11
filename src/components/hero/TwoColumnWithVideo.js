@@ -1,18 +1,18 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import tw from "twin.macro";
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import tw from 'twin.macro';
 //eslint-disable-next-line
-import { css } from "styled-components/macro";
+import { css } from 'styled-components/macro';
 
-import ReactModalAdapter from "../../helpers/ReactModalAdapter.js";
+import ReactModalAdapter from '../../helpers/ReactModalAdapter.js';
 //import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
 
 //import { ReactComponent as PlayIcon } from "feather-icons/dist/icons/play-circle.svg";
-import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
-import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-1.svg";
-import { ReactComponent as SvgDecoratorBlob2 } from "../../images/dot-pattern.svg";
-import video from "../../images/video.mp4";
-import DesignIllustration from "../../images/design-illustration.svg";
+import { ReactComponent as CloseIcon } from 'feather-icons/dist/icons/x.svg';
+import { ReactComponent as SvgDecoratorBlob1 } from '../../images/svg-decorator-blob-1.svg';
+import { ReactComponent as SvgDecoratorBlob2 } from '../../images/dot-pattern.svg';
+import video from '../../images/video.mp4';
+import DesignIllustration from '../../images/design-illustration.svg';
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col lg:flex-row md:items-center max-w-screen-xl mx-auto py-20 md:py-24`;
@@ -58,8 +58,8 @@ const StyledModal = styled(ReactModalAdapter)`
 const CloseModalButton = tw.button`absolute top-0 right-0 mt-8 mr-8 hocus:text-indigo-500`;
 
 export default ({
-  heading = "Artisanal, affordable Floral Arrangements Located at the Heart of San Francisco",
-  description = "Freshly cut floral arrangements, specially made to make every occasion unforgettable.",
+  heading = 'Artisanal, affordable Floral Arrangements Located at the Heart of San Francisco',
+  description = 'Freshly cut floral arrangements, specially made to make every occasion unforgettable.',
 
   primaryButtonUrl = `/shop`,
   primaryButtonText = `Shop Now`,
@@ -85,6 +85,20 @@ export default ({
             </Actions>
           </LeftColumn>
           <RightColumn>
+            <h1
+              style={{
+                display: 'flex',
+                zIndex: 0,
+                position: 'fixed',
+                textAlign: 'left',
+                left: '45rem',
+                color: 'darkred',
+                transform: 'scale(3)',
+                opacity: 0.5
+              }}
+            >
+              COMING SOON
+            </h1>
             <IllustrationContainer>
               <video autoplay="true" loop="true" muted="true">
                 <source
