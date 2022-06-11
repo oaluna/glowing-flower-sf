@@ -86,7 +86,7 @@ export default ({
           </LeftColumn>
           <RightColumn>
             <h1
-              style={
+              style={{
                 display: 'flex',
                 zIndex: 0,
                 position: 'fixed',
@@ -94,7 +94,7 @@ export default ({
                 left: '45rem',
                 color: 'darkred',
                 transform: 'scale(3)',
-                opacity: 0.5
+                opacity: 0.25,
               }}
             >
               COMING SOON

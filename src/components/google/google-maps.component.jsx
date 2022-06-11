@@ -2,6 +2,15 @@ import React, { Component } from 'react'
 import GoogleMapReact from "google-map-react";
 
 
+
+const Chandra = () => {
+  return (
+    <div className="florists">
+      <span>We are here</span>
+    </div>
+  );
+};
+
 class GoogleMaps extends Component {
   constructor({ props }) {
     super(props);

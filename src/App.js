@@ -117,7 +117,7 @@ import { createStructuredSelector } from 'reselect';
 import ShopPage from 'pages/shop/shop.component';
 import SignInAndSignUpPage from 'pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import CheckoutPage from 'pages/checkout/checkout.component';
-import Bookings from "pages/booking/booking.component"
+import BookingPage from "pages/booking/booking.component";
 
 import { selectCurrentUser } from 'redux/user/user.selectors';
 import { checkUserSession } from 'redux/user/user.actions';
@@ -145,7 +145,7 @@ function App({ checkUserSession, currentUser }) {
             <ComponentRenderer />
           </Route>
           <Route path="/booking">
-            <Bookings/>
+            <BookingPage/>
           </Route>
           <Route path="/shop">
             <ShopPage />

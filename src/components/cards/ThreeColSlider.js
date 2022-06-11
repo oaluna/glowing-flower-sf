@@ -43,7 +43,9 @@ const CardSlider = styled(Slider)`
     ${tw`h-auto flex justify-center mb-1`}
   }
 `;
-const Card = tw.div`h-full hover:shadow-xl flex! flex-col sm:border-none max-w-sm sm:rounded-tl-4xl sm:rounded-br-5xl relative outline-none shadow-none`;
+const Card = styled.div(() =>[
+  `backdrop-filter: blur(12px);`,
+  tw`h-full hover:shadow-xl flex! flex-col sm:border-none max-w-sm sm:rounded-tl-4xl sm:rounded-br-5xl relative outline-none shadow-none`]);
 const CardImage = styled.div(props => [
   `background-image: url("${props.imageSrc}");
   z-index:40;`,
@@ -54,6 +56,7 @@ const BackgroundImageOverlay = styled.div(() =>[
 `background-size: cover;
 background-position:center;
 background: linear-gradient(145deg, rgba(32,42,68, 1) 10%, rgba(32, 42, 68, 0.9) 84%);
+backdrop-filter: blu
 opacity: 1;
 border: none;
 position: absolute;
