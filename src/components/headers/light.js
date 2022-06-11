@@ -32,7 +32,7 @@ export const NavLinks = tw.div`inline-block justify-evenly`;
 export const NavLink = tw.a`
   z-50! text-lg my-2 lg:text-lg lg:ml-1 lg:mr-5 lg:my-0
   font-normal tracking-wide transition duration-300
-  pb-1 border-b-2 border-transparent hover:border-indigo-500 hocus:text-indigo-900 
+  pb-1 border-b-2 border-transparent hover:border-indigo-500 hocus:text-indigo-900
 `;
 
 export const PrimaryLink = tw(NavLink)`
@@ -55,7 +55,7 @@ export const NavToggle = tw.button`
   lg:hidden md:absolute z-20 focus:outline-none hocus:text-indigo-900 transition duration-300
 `;
 export const MobileNavLinks = motion(styled.div`
-  ${tw`lg:hidden z-50! fixed top-0 inset-x-0 mx-4 my-8 p-10 border text-center rounded-lg 
+  ${tw`lg:hidden z-50! fixed top-0 inset-x-0 mx-4 my-8 p-10 border text-center rounded-lg
   text-indigo-900 bg-white sm:w-screen`}
   ${NavLinks} {
     ${tw`flex flex-col justify-center items-center`}
@@ -92,11 +92,12 @@ export default connect(mapStateToProps, mapDispatchToProps)(({ roundedHeaderButt
   const defaultLinks = [
     <NavLinks key={1}>
       <NavLink href="/about">About</NavLink>
-      <NavLink href="/#">Shop</NavLink>
+      <NavLink href="/shop/ ">Shop</NavLink>
+      <NavLink href="/booking">Book</NavLink>
       <NavLink href="/contact">Contact Us</NavLink>
     {hidden ? null : <CartDropdown />}
       {currentUser ? (
-        <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="/#" as='div' onClick={signOutStart}>
+        <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="/" as='div' onClick={signOutStart}>
           SIGN OUT
         </PrimaryLink>
       ) : (

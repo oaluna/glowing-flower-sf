@@ -5,6 +5,7 @@ import Modal from "react-modal";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react"
 import { persistor, store } from "redux/store.js"
+import "react-big-calendar/lib/css/react-big-calendar.css";
 
 Modal.setAppElement("#root");
 

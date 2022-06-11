@@ -47,6 +47,7 @@ const Card = tw.div`h-full hover:shadow-xl flex! flex-col sm:border-none max-w-s
 const CardImage = styled.div(props => [
   `background-image: url("${props.imageSrc}");
   z-index:40;`,
+  `background-color:  background: linear-gradient(135deg, #9495fa, #9c6df4 );`,
   tw`w-full h-56 sm:h-64 bg-cover bg-center rounded sm:rounded-none sm:rounded-tl-4xl`
 ]);
 const BackgroundImageOverlay = styled.div(() =>[

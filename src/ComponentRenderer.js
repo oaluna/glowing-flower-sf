@@ -99,8 +99,7 @@ import FiveColumnWithBackgroundFooter from "components/footers/FiveColumnWithBac
 import FiveColumnDarkFooter from "components/footers/FiveColumnDark.js";
 import MiniCenteredFooter from "components/footers/MiniCenteredFooter.js";
 
-import BookingsComponent from "components/bookings/bookings.component.jsx";
-import BookingsSearchComponent from "components/bookings-search/bookings-search.component.jsx"
+import BookingPage from "pages/booking/booking.component"
 
 
 
@@ -377,17 +376,12 @@ export const components = {
       }
     },
     Bookings: {
-      type: "Bookings Component",
+      type: "Bookings Page",
       elements: {
-        Bookings: {
-          name: "Bookings Component",
-          component: BookingsComponent,
-          url: "/components/bookings/bookings.component"
-        },
-        BookingsSearch: {
-          name: "Bookings Search Component",
-          component: BookingsSearchComponent,
-          url: "/components/bookings-search/bookings-search.component"
+        BookingPage: {
+          name: "Booking Page",
+          component: BookingPage,
+          url: "/pages/booking/booking.component"
         }
       }
     },

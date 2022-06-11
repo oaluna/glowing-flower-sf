@@ -83,8 +83,7 @@ import Header from "components/headers/light.js"
 // import Footer from "components/footers/FiveColumnDark.js";
 import Footer from "components/footers/MiniCenteredFooter.js";
 
-//import EventBookings from "pages/booking/booking.container.jsx";
-//import BookingsSearchComponent from "components/bookings-search/bookings-search.component.jsx"
+
 
 /* Ready Made Pages (from demos folder) */
 // import EventLandingPage from "demos/EventLandingPage.js";
@@ -118,6 +117,7 @@ import { createStructuredSelector } from 'reselect';
 import ShopPage from 'pages/shop/shop.component';
 import SignInAndSignUpPage from 'pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import CheckoutPage from 'pages/checkout/checkout.component';
+import Bookings from "pages/booking/booking.component"
 
 import { selectCurrentUser } from 'redux/user/user.selectors';
 import { checkUserSession } from 'redux/user/user.actions';
@@ -126,6 +126,7 @@ function App({ checkUserSession, currentUser }) {
   useEffect(() => {
     checkUserSession()
   }, [checkUserSession]);
+
 
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
   // return <AnimationRevealPage disabled>xxxxxxxxxx</AnimationRevealPage>;
@@ -143,11 +144,13 @@ function App({ checkUserSession, currentUser }) {
           <Route path="/components/:type/:name">
             <ComponentRenderer />
           </Route>
-
+          <Route path="/booking">
+            <Bookings/>
+          </Route>
           <Route path="/shop">
             <ShopPage />
           </Route>
-<Route path="/terms">
+          <Route path="/terms">
             <TermsOfServicePage />
           </Route>
           <Route path="/privacy-policy">
