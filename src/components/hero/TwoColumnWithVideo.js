@@ -86,7 +86,7 @@ export default ({
           </LeftColumn>
           <RightColumn>
             <h1
-              style={{
+              style={
                 display: 'flex',
                 zIndex: 0,
                 position: 'fixed',
