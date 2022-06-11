@@ -11,23 +11,24 @@ class BookingPage extends Component {
       routes: 'dashboard',
       open: false,
       florist: '',
-      appDate: '',
+      appDate: Date.now(),
       appTime: '',
+      appMessage: '',
       greeting: false,
       appointments: [
         {
           florist: 'Dr. Stephanie Satz',
-          appDate: '6/30/2018',
+          appDate: '6/30/2022',
           appTime: '9:30am',
         },
         {
           florist: 'Dr. Zaher Amjad',
-          appDate: '7/4/2018',
+          appDate: '7/4/2022',
           appTime: '8:30am',
         },
         {
           florist: 'Dr. Charles McFarlane',
-          appDate: '7/10/2018',
+          appDate: '7/10/2022',
           appTime: '8:30am',
         },
       ],
@@ -65,6 +66,13 @@ class BookingPage extends Component {
       appTime: e.target.value,
     });
   };
+
+  handleChangeMessage = (e) => {
+    this.setState({
+      ...this.state.appointments.appMessage,
+      appMessage: e.target.value
+    })
+  }
 
   // clear today's appointments and cancelled appointments displays
   clearApp = () => {

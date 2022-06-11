@@ -9,6 +9,7 @@ const Appointment = ({
   handleChangeFlorist,
   handleChangeDate,
   handleChangeTime,
+  handleChangeMessage,
   greeting,
 }) => {
   return (
@@ -22,32 +23,33 @@ const Appointment = ({
             <h4>Select a Florist</h4>
             <select id=" florist" onChange={handleChangeFlorist}>
               <option>Select a Florist</option>
-              <option defaultValue>Dr Winger Michael</option>
-              <option>Dr. Stephanie Satz</option>
-              <option>Dr Zaher Amjad</option>
-              <option>Dr. Charles McFarlane</option>
+              <option defaultValue>Chandra Tanuwijaya</option>
             </select>
-
             <h4>Select a date</h4>
             <select id=" appDate" onChange={handleChangeDate}>
               <option>Select a date</option>
-              <option>6/28/2018</option>
-              <option>6/29/2018</option>
-              <option>6/30/2018</option>
-              <option>7/1/2018</option>
-              <option>7/2/2018</option>
-              <option>7/3/2018</option>
-              <option>7/4/2018</option>
-              <option>7/5/2018</option>
-              <option>7/6/2018</option>
+              <option>6/28/2022</option>
+              <option>6/29/2022</option>
+              <option>6/30/2022</option>
+              <option>7/1/2022</option>
+              <option>7/2/2022</option>
+              <option>7/3/2022</option>
+              <option>7/4/2022</option>
+              <option>7/5/2022</option>
+              <option>7/6/2022</option>
             </select>
 
             <h4>Select a time</h4>
-            <select id=" appTime" onChange={handleChangeTime}>
+            <select id="appTime" onChange={handleChangeTime}>
               <option>Select a time</option>
               <option>8:30am</option>
               <option>9:30am</option>
             </select>
+
+            <textarea style={{borderRadius: "5px", padding: "5px"}} name="message"
+            placeholder="Share details about your event here." onChange={handleChangeMessage} rows="5"
+
+            />
 
             <button onClick={bookAppointment}>Book Appointment</button>
           </div>

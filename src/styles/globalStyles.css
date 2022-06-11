@@ -213,7 +213,7 @@ span {
 .react-calendar__tile {
   font-size: 0.9rem;
 }
-/* .calendar{
+.calendar{
     height: auto;
     width: 65%;
     background: #fcfcfe;
@@ -264,7 +264,7 @@ span {
 }
 .calendar .calendarContainer .weekDay .endDay{
     color: #ef5670;
-} */
+}
 
 @media screen and (max-width: 70rem) {
   .react-calendar {
@@ -510,6 +510,7 @@ span {
   width: 100%;
   height: 7rem;
   background: #fcfcfe;
+  position: absolute;
 }
 
 .makeAppointment .makeAppointmentButton {
@@ -523,6 +524,7 @@ span {
   letter-spacing: 0.09rem;
   cursor: pointer;
   outline: none;
+  position: relative;
 }
 .makeAppointment button:active {
   border: inset 1px #7471d5;

@@ -7,14 +7,9 @@ const SearchFlorist = () => {
       <GoogleMaps />
       <div className="searchCard">
         <header>
-          <span className="googleLetter">A</span>
-          <p className="googleFlorist"> Dr. Stephanie Satz</p>
-          <span className="googleLetter">B</span>
-          <p className="googleFlorist"> Dr. Michael Winger</p>
-          <span className="googleLetter">C</span>
-          <p className="googleFlorist">Dr. Zaher Amjad</p>
-          <span className="googleLetter">D</span>
-          <p className="googleFlorist">Dr. Charles McFarlane</p>
+          <span className="googleLetter">Florist:{" "}</span>
+          <p className="googleFlorist">Chandra Tanuwijaya</p>
+
         </header>
       </div>
     </section>
