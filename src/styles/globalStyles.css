@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&family=Raleway:wght@500&family=Rozha+One&display=swap');
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Raleway&family=Rozha+One&display=swap" rel="stylesheet">
 
 /* Below animations are fore modal created using React-Modal */
 body,
@@ -39,13 +41,13 @@ html {
 }
 
 h1 {
- 
-  font-family: 'Rozha One', sans-serif !important;
+
+  font-family: 'Caveat', sans-serif !important;
   letter-spacing: -1px;
   font-size: 64px;
 }
 h2, h3, h4, h5, h6 {
-   font-family: 'Averia Sans Libre', sans-serif !important;
+   font-family: 'Rozha One', sans-serif !important;
 }
 
 h2 {
