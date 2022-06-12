@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&family=Raleway:wght@500&family=Rozha+One&display=swap');
+
 /* Below animations are fore modal created using React-Modal */
 body,
 html {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Averia Sans Libre', sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -38,7 +40,7 @@ html {
 
 h1 {
   font-weight: 800;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Rozha One', sans-serif;
   letter-spacing: -1px;
   font-size: 64px;
 }
@@ -77,6 +79,7 @@ p {
   font-weight: 200;
   font-size: 16px;
   letter-spacing: 1px;
+  font-family: "Raleway", sans-serif;
 }
 
 div,
