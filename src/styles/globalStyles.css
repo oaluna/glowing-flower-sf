@@ -3,7 +3,7 @@
 /* Below animations are fore modal created using React-Modal */
 body,
 html {
-  font-family: 'Averia Sans Libre', sans-serif;
+
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -39,19 +39,22 @@ html {
 }
 
 h1 {
-  font-weight: 800;
-  font-family: 'Rozha One', sans-serif;
+ 
+  font-family: 'Rozha One', sans-serif !important;
   letter-spacing: -1px;
   font-size: 64px;
 }
+h2, h3, h4, h5, h6 {
+   font-family: 'Averia Sans Libre', sans-serif !important;
+}
 
 h2 {
-  font-weight: 600;
+
   font-size: 56px;
 }
 
 h3 {
-  font-weight: 400;
+
   font-size: 48px;
 }
 
@@ -70,16 +73,12 @@ h6 {
 a,
 span,
 li,
-button {
-  font-weight: 400;
-  font-size: 24px;
-}
-
+button,
 p {
   font-weight: 200;
-  font-size: 16px;
+  font-size: 24px;
   letter-spacing: 1px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif !important;
 }
 
 div,
