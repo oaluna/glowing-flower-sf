@@ -17,7 +17,7 @@ const Appointment = ({
       <button onClick={onOpenModal} className="makeAppointmentButton">
         Make an appointment
       </button>
-      {greeting === false ? (
+      {greeting === false && (
         <Modal open={open} onClose={onCloseModal} center>
           <div className="modalWindow">
             <h4>Select a Florist</h4>
@@ -46,19 +46,19 @@ const Appointment = ({
               <option>9:30am</option>
             </select>
 
-            <textarea style={{borderRadius: "5px", padding: "5px"}} name="message"
-            placeholder="Share details about your event here." onChange={handleChangeMessage} rows="5"
+            <textarea style={{ borderRadius: "5px", padding: "5px" }} name="message"
+              placeholder="Share details about your event here." onChange={handleChangeMessage} rows="5"
 
             />
 
             <button onClick={bookAppointment}>Book Appointment</button>
           </div>
         </Modal>
-      ) : (
-        <div>
+      )}
+       {bookAppointment === true &&  (<div>
           <h1>Thank You</h1>
           <p>Your apointment is set</p>
-        </div>
+        </div>)}
       )}
       <div className="profileContainer">
         <div className="profilePic">

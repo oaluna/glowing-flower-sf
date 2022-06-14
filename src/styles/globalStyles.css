@@ -5,7 +5,6 @@
 /* Below animations are fore modal created using React-Modal */
 body,
 html {
-
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -41,22 +40,23 @@ html {
 }
 
 h1 {
-
   font-family: 'Caveat', sans-serif !important;
   letter-spacing: -1px;
-  font-size: 64px;
+  font-size: 96px;
 }
-h2, h3, h4, h5, h6 {
-   font-family: 'Rozha One', sans-serif !important;
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Rozha One', sans-serif !important;
 }
 
 h2 {
-
   font-size: 56px;
 }
 
 h3 {
-
   font-size: 48px;
 }
 
@@ -80,7 +80,7 @@ p {
   font-weight: 200;
   font-size: 24px;
   letter-spacing: 1px;
-  font-family: "Raleway", sans-serif !important;
+  font-family: 'Raleway', sans-serif !important;
 }
 
 div,
@@ -204,10 +204,12 @@ span {
   border-radius: 0.3rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border: none;
+  padding: 2rem
 }
 .react-calendar__navigation__label {
   color: #19144d;
   font-weight: bold;
+  position: relative;
 }
 .react-calendar__month-view__weekdays__weekday {
   color: #6c6de1;
@@ -216,58 +218,62 @@ span {
 }
 .react-calendar__tile {
   font-size: 0.9rem;
+  padding: 2rem;
 }
-.calendar{
-    height: auto;
-    width: 65%;
-    background: #fcfcfe;
-    margin-left: 15rem;
-    border-radius: .3rem;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+.calendar {
+  height: auto;
+  width: 65%;
+  background: #fcfcfe;
+  position: relative;
+  margin-left: 15rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  display: flex;
+  flex-direction: row;
 }
-.calendar .calendarContainer{
-    padding: 2rem 2rem;
+.calendar .calendarContainer {
+  padding: 2rem 2rem;
 }
-.calendar .calendarContainer .calendarMonth{
-    display: flex;
-    justify-content: space-between;
-    padding: .5rem 0;
+.calendar .calendarContainer .calendarMonth {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0 1rem 0;
 }
-.calendar .calendarContainer .calendarMonth span{
-    color: #19144d;
-    font-weight: bold;
+.calendar .calendarContainer .calendarMonth span {
+  color: #19144d;
+  font-weight: bold;
 }
-.calendar .calendarContainer .calendarMonth img{
-    opacity: .3;
+.calendar .calendarContainer .calendarMonth img {
+  opacity: 0.3;
 }
-.calendar .calendarContainer .calendarDay{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 2rem 0;
+.calendar .calendarContainer .calendarDay {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 2rem;
 }
-.calendar .calendarContainer .calendarDay span{
-    color: #6c6de1;
-    font-weight: bold;
-}
-
-.calendar .calendarContainer .weekDay{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    justify-content: space-around;
-    grid-gap: 1rem;
+.calendar .calendarContainer .calendarDay span {
+  color: #6c6de1;
+  font-weight: bold;
 }
 
-.calendar .calendarContainer .weekDay span{
-    font-weight: bold;
+.calendar .calendarContainer .weekDay {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-content: space-around;
+  grid-gap: 1rem;
 }
-.calendar .calendarContainer .weekDay .previousMonth{
-    color: #c7c7d2;
+
+.calendar .calendarContainer .weekDay span {
+  font-weight: bold;
 }
-.calendar .calendarContainer .weekDay .endDay{
-    color: #ef5670;
+.calendar .calendarContainer .weekDay .previousMonth {
+  color: #c7c7d2;
+}
+.calendar .calendarContainer .weekDay .endDay {
+  color: #ef5670;
 }
 
 @media screen and (max-width: 70rem) {

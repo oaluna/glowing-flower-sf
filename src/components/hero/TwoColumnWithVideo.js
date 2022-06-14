@@ -19,7 +19,7 @@ const TwoColumn = tw.div`flex flex-col lg:flex-row md:items-center max-w-screen-
 const LeftColumn = tw.div`relative lg:w-6/12 lg:pr-12 flex-shrink-0 text-center lg:text-left z-50`;
 const RightColumn = tw.div`relative mt-12 lg:mt-0 flex flex-col justify-center`;
 
-const Heading = tw.h1`font-bold relative! text-3xl md:text-5xl leading-snug max-w-3xl z-50 mt-10 text-indigo-900`;
+const Heading = tw.h1`font-bold relative! text-6xl md:text-5xl leading-snug max-w-3xl z-50 mt-10 text-indigo-900`;
 const Paragraph = tw.p`my-5 lg:my-8 sm:text-lg lg:text-base font-normal text-indigo-800 max-w-lg mx-auto relative lg:mx-0 z-50`;
 
 const Actions = tw.div`flex flex-col items-center sm:flex-row justify-center lg:justify-start mt-8`;
@@ -95,6 +95,7 @@ export default ({
                 color: 'darkred',
                 transform: 'scale(3)',
                 opacity: 0.25,
+
               }}
             >
               COMING SOON
