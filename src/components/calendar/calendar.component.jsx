@@ -1,14 +1,17 @@
 import React from 'react';
+import { StyledCalendar } from "./calendar.styles"
+//import {} from "feather-icons/dist/icons/chevron-left.svg";
+//import {} from "feather-icons/dist/icons/chevron-right.svg";
 
 const Calendar = () =>{
     return(
-        <div className="calendar">
+        <StyledCalendar>
             <div className="calendarContainer">
 
                 <div className="calendarMonth">
-                    {/* <img src={Back}/> */}
-                    <span>April 2018</span>
-                    {/* <img src={Forward}/> */}
+                 {/* <img src={ChevronLeft} alt="go back" /> */}
+                    <span>June 2022</span>
+                 {/* <img src={ChevronRight} alt="go forward" /> */}
                 </div>
                 <div className="calendarDay">
                     <span>MON</span>
@@ -66,7 +69,7 @@ const Calendar = () =>{
         <span className="endDay">1</span>
                 </div>
             </div>
-        </div>
+        </StyledCalendar>
 
     );
 }

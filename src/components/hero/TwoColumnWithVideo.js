@@ -19,13 +19,13 @@ const TwoColumn = tw.div`flex flex-col lg:flex-row md:items-center max-w-screen-
 const LeftColumn = tw.div`relative lg:w-6/12 lg:pr-12 flex-shrink-0 text-center lg:text-left z-50`;
 const RightColumn = tw.div`relative mt-12 lg:mt-0 flex flex-col justify-center`;
 
-const Heading = tw.h1`font-bold relative! text-6xl md:text-5xl leading-snug max-w-3xl z-50 mt-10 text-indigo-900`;
+const Heading = tw.h1`font-bold relative! lg:text-6xl md:text-5xl leading-snug max-w-6xl z-50 mt-10 text-blue-900`;
 const Paragraph = tw.p`my-5 lg:my-8 sm:text-lg lg:text-base font-normal text-indigo-800 max-w-lg mx-auto relative lg:mx-0 z-50`;
 
 const Actions = tw.div`flex flex-col items-center sm:flex-row justify-center lg:justify-start mt-8`;
 const PrimaryButton = tw.button`font-normal px-8 lg:px-10 py-3 rounded bg-indigo-900 text-indigo-100 hocus:bg-indigo-700 focus:shadow-outline focus:outline-none transition duration-300`;
 // const WatchVideoButton = styled.button`
-//   ${tw`mt-4 sm:mt-0 sm:ml-8 flex items-center text-secondary-300 transition duration-300 hocus:text-indigo-900 focus:outline-none`}
+//   ${tw`mt-4 sm:mt-0 sm:ml-8 flex items-center text-secondary-300 transition duration-300 hocus:text-blue-900 focus:outline-none`}
 //   .playIcon {
 //     ${tw`stroke-1 w-12 h-12`}
 //   }
@@ -58,9 +58,8 @@ const StyledModal = styled(ReactModalAdapter)`
 const CloseModalButton = tw.button`absolute top-0 right-0 mt-8 mr-8 hocus:text-indigo-500`;
 
 export default ({
-  heading = 'Artisanal, affordable Floral Arrangements Located at the Heart of San Francisco',
-  description = 'Freshly cut floral arrangements, specially made to make every occasion unforgettable.',
-
+  heading = 'Quality artistrty in every arrangement',
+  description = 'Freshly cut floral arrangements, specially made to make every occasion unforgettable--all for the best price.',
   primaryButtonUrl = `/shop`,
   primaryButtonText = `Shop Now`,
   imageSrc = DesignIllustration,

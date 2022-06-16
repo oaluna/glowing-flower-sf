@@ -5,7 +5,7 @@ const CurrentAppointments = ({ appointments, cancelAppointment }) => {
   return (
     <main className="currentAppointments">
       <div className="container">
-        <header className="header">
+        <header className="header" style={{position: "relative", width: "50vw", margin: "10vh 10vw"}}>
           <h3>Appointments</h3>
           <p className="dots">...</p>
         </header>

@@ -59,7 +59,7 @@ const Appointment = ({
           <h1>Thank You</h1>
           <p>Your apointment is set</p>
         </div>)}
-      )}
+
       <div className="profileContainer">
         <div className="profilePic">
           {/* <img src={Me} alt="profile icon" /> */}

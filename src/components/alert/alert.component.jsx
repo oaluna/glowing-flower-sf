@@ -10,10 +10,9 @@ const Alert = ({ today, clearAlert, currentUser }) => {
               <h3>Alert</h3>
               <p className="dots">...</p>
             </div>
-            <p>You have no visits today:</p>
+            <p>You have no events today:</p>
             <ul>
-              {/* <li>Dr Anthony Wagner <span>Dermatologist</span></li>
-                <li>Dr Anthony Wagner <span>Dentist</span></li> */}
+          <li>Chandra Tanuwijaya - your Florist</li>
             </ul>
           </div>
         ) : (
@@ -24,7 +23,7 @@ const Alert = ({ today, clearAlert, currentUser }) => {
                 ...
               </p>
             </div>
-            <p>{`You have ${today.length} visit(s) today:`}</p>
+            <p>{`You have ${today.length} event(s) today:`}</p>
             {today.map((val, index) => {
               return (
                 <ul key={index}>
@@ -38,7 +37,7 @@ const Alert = ({ today, clearAlert, currentUser }) => {
           </div>
         )
     )}
-      <h2>You must log in as an administrator first.</h2>
+      <h2 style={{position: "relative", marginTop: "35vh", marginBottom: "0vh", width: "100%", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center"}}>You must log in as an administrator first.</h2>
     </div>
   );
 };

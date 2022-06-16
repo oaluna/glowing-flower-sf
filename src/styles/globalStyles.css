@@ -1,6 +1,4 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Raleway&family=Rozha+One&display=swap" rel="stylesheet">
+
 
 /* Below animations are fore modal created using React-Modal */
 body,
@@ -99,12 +97,14 @@ video {
   mask-image: linear-gradient(
     to top,
     transparent 0%,
-    rgba(255, 255, 255, 0.5) 50%,
-    rgba(255, 255, 255, 1) 75%
+    rgba(255, 255, 255, 0.5) 26%,
+    rgba(255, 255, 255, 1) 40%
   ) !important;
   left: -40vw;
   top: -75vh;
   padding: 0;
+
+  opacity: 0.65;
 }
 
 @media screen and (max-width: 350px) {

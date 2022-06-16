@@ -17,30 +17,30 @@ class BookingPage extends Component {
       greeting: false,
       appointments: [
         {
-          florist: 'Dr. Stephanie Satz',
+          florist: 'Chandra Tanuwijaya',
           appDate: '6/30/2022',
           appTime: '9:30am',
         },
         {
-          florist: 'Dr. Zaher Amjad',
+          florist:'Chandra Tanuwijaya',
           appDate: '7/4/2022',
           appTime: '8:30am',
         },
         {
-          florist: 'Dr. Charles McFarlane',
+          florist: 'Chandra Tanuwijaya',
           appDate: '7/10/2022',
           appTime: '8:30am',
         },
       ],
       canAppList: [
         {
-          florist: '',
-          appTime: '',
+          florist: 'Chandra Tanuwijaya',
+          appTime: '10:30am',
         },
       ],
       today: [
         {
-          florist: '',
+          florist: 'Chandra Tanuwijaya',
         },
       ],
     };

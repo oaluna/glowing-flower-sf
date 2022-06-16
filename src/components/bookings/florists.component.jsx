@@ -9,7 +9,7 @@ export const Satz = () => {
 export const Winger = () => {
   return (
     <div className="florists">
-      <span>B</span>
+      <span>Chandra Tanuwijaya</span>
     </div>
   );
 };
@@ -17,7 +17,7 @@ export const Winger = () => {
 export const Amjad = () => {
   return (
     <div className="florists">
-      <span>C</span>
+      <span>Robbie</span>
     </div>
   );
 };
@@ -25,7 +25,7 @@ export const Amjad = () => {
 export const Mcfarlane = () => {
   return (
     <div className="florists">
-      <span>D</span>
+      <span>?</span>
     </div>
   );
 };
