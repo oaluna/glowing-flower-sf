@@ -1,28 +1,46 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const StyledAlert = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+`;
+const AlertContainer = styled.div`
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-evenly;
+`;
+const AlertHeader = styled.div``;
+const Dots = styled.p`
+font-size: 12px
+margin: 0 auto;
+`;
 
 const Alert = ({ today, clearAlert, currentUser }) => {
   return (
-    <div className="alert">
-      {currentUser && (
-        today[0].florist === '' || today[0] === undefined ? (
-          <div className="alertContainer">
-            <div className="alertHeader">
+    <StyledAlert>
+      {currentUser &&
+        (today[0].florist === '' || today[0] === undefined ? (
+          <AlertContainer>
+            <AlertHeader>
               <h3>Alert</h3>
-              <p className="dots">...</p>
-            </div>
-            <p>You have no events today:</p>
-            <ul>
-          <li>Chandra Tanuwijaya - your Florist</li>
-            </ul>
-          </div>
+              <Dots>You have no events today...</Dots>
+              <ul>
+                <li>Chandra Tanuwijaya - your Florist</li>
+              </ul>
+            </AlertHeader>
+          </AlertContainer>
         ) : (
-          <div className="alertContainer">
-            <div className="alertHeader">
+          <AlertContainer>
+            <AlertHeader>
               <h3>Alert</h3>
-              <p onClick={clearAlert} className="dots">
-                ...
-              </p>
-            </div>
+              <Dots onClick={clearAlert}>
+                  You have no events today
+              </Dots>
+            </AlertHeader>
             <p>{`You have ${today.length} event(s) today:`}</p>
             {today.map((val, index) => {
               return (
@@ -31,14 +49,27 @@ const Alert = ({ today, clearAlert, currentUser }) => {
                     {today[index].florist}
                     <span>{today[index].specialty}</span>
                   </li>
+                  <li>{val}</li>
                 </ul>
               );
             })}
-          </div>
-        )
-    )}
-      <h2 style={{position: "relative", marginTop: "35vh", marginBottom: "0vh", width: "100%", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center"}}>You must log in as an administrator first.</h2>
-    </div>
+          </AlertContainer>
+        ))}
+      <h2
+        style={{
+          position: 'relative',
+          marginTop: '35vh',
+          marginBottom: '0vh',
+          width: '100%',
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        You must log in as an administrator first.
+      </h2>
+    </StyledAlert>
   );
 };
 

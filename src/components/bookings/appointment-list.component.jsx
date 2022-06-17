@@ -1,5 +1,5 @@
 import React from 'react';
-import Cards from 'components/cards/AppointmentCards';
+import ApptCards from 'components/cards/AppointmentCards';
 
 const AppointmentList = ({ appointments, cancelAppointment }) => {
   return (
@@ -8,7 +8,7 @@ const AppointmentList = ({ appointments, cancelAppointment }) => {
         return (
           <>
             {val !== undefined && (
-              <Cards
+              <ApptCards
                 key={index}
                 florist={appointments[index].florist}
                 specialty={appointments[index].specialty}

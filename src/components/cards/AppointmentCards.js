@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ApptCards = styled.div`
-  width: 50vw;
+  width: 40vw;
   height: 4rem;
 
   background: linear-gradient(
@@ -17,18 +17,29 @@ const ApptCards = styled.div`
   flex-direction: row;
   position: relative;
   align-items: center;
-  justify-content: flex-start;
-  
+  justify-content: space-evenly;
+  margin: 5vh 15vw 5vh 0vw;
 `;
 
 const CardsHeader = styled.header`
+  margin: 0 5vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
-
+`;
+const ProfileTitle = styled.div`
+  width: 20vw;
+  margin: 0;
+  padding-right: 5vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 `;
 const ProfileDate = styled.div`
   padding: 5px 15% 5px 0px;
-text-align: center;
-  `;
+  text-align: center;
+`;
 
 const ProfileButton = styled.button`
   font-weight: normal;
@@ -37,12 +48,12 @@ const ProfileButton = styled.button`
   border-radius: 12px;
   background-color: indigo;
   color: white;
+  font-size: 12px;
   &::hover &::focus {
     background-color: cobalt;
     box-shadow: 0.5px 1.5px rgba(255, 255, 255, 0.2);
     outline: none;
     transition-duration: 300ms;
-
   }
 `;
 const AppointmentCards = ({
@@ -57,10 +68,10 @@ const AppointmentCards = ({
       <ApptCards>
         <CardsHeader>
           {/* <img className="profilePic" src={Florist} alt="medical logo" /> */}
-          <div className="profileTitle">
-            <h5>{florist}</h5>
+          <ProfileTitle>
+            <h6>{florist}</h6>
             <p>Florist</p>
-          </div>
+          </ProfileTitle>
         </CardsHeader>
         <ProfileDate>
           <div className="profileleft">

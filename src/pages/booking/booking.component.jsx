@@ -23,7 +23,7 @@ class BookingPage extends Component {
         },
         {
           florist:'Chandra Tanuwijaya',
-          appDate: '7/4/2022',
+          appDate: '7/04/2022',
           appTime: '8:30am',
         },
         {
@@ -41,6 +41,7 @@ class BookingPage extends Component {
       today: [
         {
           florist: 'Chandra Tanuwijaya',
+          appTime: '06:00pm'
         },
       ],
     };

@@ -40,12 +40,6 @@ app.listen(port, error => {
   console.log('Server running on port ' + port);
 });
 
-app.post('/booking', (req, res) => {
-  const body = {
-    source: req.body.token.id,
-    date: req.body.date
-  }
-})
 
 app.post('/payment', (req, res) => {
   const body = {
