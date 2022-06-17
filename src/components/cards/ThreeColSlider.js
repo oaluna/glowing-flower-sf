@@ -56,7 +56,7 @@ const BackgroundImageOverlay = styled.div(() => [
   `background-size: cover;
 background-position:center;
 background: linear-gradient(145deg, rgba(32,42,68, 1) 10%, rgba(32, 42, 68, 0.9) 84%);
-backdrop-filter: blur(12px);
+
 opacity: 1;
 border: none;
 position: absolute;
