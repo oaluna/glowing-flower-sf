@@ -8,9 +8,9 @@ html {
   overflow-x: hidden;
   background: #d3cce3;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #e9e4f0, #d3cce3);
+  background: -webkit-linear-gradient(to right, #d9e4f0, #c3cce3);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #e9e4f0, #d3cce3);
+  background: linear-gradient(to right, #d9e4f0, #c3cce3);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   background-size: cover;
@@ -221,36 +221,22 @@ span {
   padding: 2rem;
 }
 .calendar {
-  height: auto;
-  width: 65%;
-  background: #fcfcfe;
-  position: relative;
-  margin-left: 15rem;
-  border-radius: 0.3rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  display: flex;
-  flex-direction: row;
+
 }
 .calendar .calendarContainer {
   padding: 2rem 2rem;
 }
 .calendar .calendarContainer .calendarMonth {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem 0 1rem 0;
+
 }
 .calendar .calendarContainer .calendarMonth span {
-  color: #19144d;
-  font-weight: bold;
+
 }
 .calendar .calendarContainer .calendarMonth img {
   opacity: 0.3;
 }
 .calendar .calendarContainer .calendarDay {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  padding: 2rem;
+
 }
 .calendar .calendarContainer .calendarDay span {
   color: #6c6de1;
@@ -258,19 +244,14 @@ span {
 }
 
 .calendar .calendarContainer .weekDay {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  justify-content: space-around;
-  grid-gap: 1rem;
+
 }
 
 .calendar .calendarContainer .weekDay span {
-  font-weight: bold;
+
 }
 .calendar .calendarContainer .weekDay .previousMonth {
-  color: #c7c7d2;
+
 }
 .calendar .calendarContainer .weekDay .endDay {
   color: #ef5670;
@@ -513,71 +494,7 @@ span {
   font-weight: bold;
   margin: 0.5rem 0;
 }
-.makeAppointment {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 7rem;
-  background: #fcfcfe;
-  position: absolute;
-}
 
-.makeAppointment .makeAppointmentButton {
-  padding: 0.9rem;
-  margin-left: 15rem;
-  color: #fff;
-  background: linear-gradient(to right, #9495ea, #6c6de4);
-  border: none;
-  border-radius: 0.3rem;
-  box-shadow: 0px 4px 20px #e3e4f7;
-  letter-spacing: 0.09rem;
-  cursor: pointer;
-  outline: none;
-  position: relative;
-}
-.makeAppointment button:active {
-  border: inset 1px #7471d5;
-}
-.makeAppointment .profileContainer {
-  display: flex;
-  margin-right: 15rem;
-}
-.makeAppointment .profileContainer .profilePic {
-  width: 3rem;
-  height: 3rem;
-  margin-right: 0.5rem;
-  border-radius: 2rem;
-  background: #f6c5e6;
-  box-shadow: 0px 4px 20px #e3e4f7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.makeAppointment .profileContainer .profilePic img {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 2rem;
-}
-
-.makeAppointment .profileContainer select {
-  border: none;
-  padding: 1rem 0rem;
-  font-weight: bold;
-  text-indent: 0.8rem;
-}
-
-.makeAppointment .profileContainer select:focus {
-  outline: none;
-}
-
-.modalWindow {
-  padding: 3rem 6rem;
-  background: linear-gradient(50deg, #22156a 10%, #582a97, #0e77be);
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
 .styles_modal__gNwvD {
   padding: 0;
 }
@@ -586,33 +503,6 @@ span {
   cursor: pointer;
 }
 
-.modalWindow h4 {
-  margin: 1rem 0;
-  color: #fff;
-  text-transform: uppercase;
-}
-.modalWindow label {
-  padding: 2rem 0;
-}
-.modalWindow select {
-  display: block;
-  padding: 0.5rem 0 0.5rem 0.5rem;
-  margin-bottom: 1rem;
-  border-radius: 0.5rem;
-  font-size: 0.9rem;
-}
-.modalWindow select:focus {
-  outline: none;
-}
-.modalWindow button {
-  margin-top: 1rem;
-  border-radius: 1rem;
-  padding: 0.5rem 1rem;
-  background: #eaeafc;
-  border: none;
-  color: #22156a;
-  cursor: pointer;
-}
 @media screen and (max-width: 70rem) {
   .makeAppointment {
     justify-content: space-around;

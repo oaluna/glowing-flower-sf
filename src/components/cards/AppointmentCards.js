@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ApptCards = styled.div`
-  width: 40vw;
+  max-width: 40vw;
   height: 4rem;
 
   background: linear-gradient(
@@ -18,14 +18,16 @@ const ApptCards = styled.div`
   position: relative;
   align-items: center;
   justify-content: space-evenly;
-  margin: 5vh 15vw 5vh 0vw;
+ margin-bottom: 5vh;
+ display: none;
 `;
 
 const CardsHeader = styled.header`
-  margin: 0 5vw;
+  margin-left: 0;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
+display: none;
 
 `;
 const ProfileTitle = styled.div`
@@ -35,6 +37,7 @@ const ProfileTitle = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: absolute;
 `;
 const ProfileDate = styled.div`
   padding: 5px 15% 5px 0px;

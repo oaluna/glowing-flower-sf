@@ -1,8 +1,8 @@
 import Alert from 'components/alert/alert.component';
 import Canceled from 'components/calendar/calendar.component';
+import CurrentAppointments from 'components/bookings/current-appointment.component'
 import Calendar from 'react-calendar';
-import SearchFlorist from 'components/bookings/search-florist.component';
-import CurrentAppointments from 'components/bookings/current-appointment.component';
+import SearchFlorist from "components/bookings/search-florist.component"
 import styled from 'styled-components';
 
 const StyledDashboard = styled.div`
@@ -17,8 +17,8 @@ const StyledDashboard = styled.div`
 `;
 
 const ContainerLeft = styled.div`
-  width: 50vw;
-  height: 80vh;
+  width: 60vw;
+  height: 50vh;
   margin: 20vh 0vw;
   padding-left: 10vw;
   padding-bottom: 0vh;
@@ -28,7 +28,7 @@ const ContainerLeft = styled.div`
   .react-calendar {
     height: 60vh;
     position: relative;
-   margin: 0;
+   margin-top: 0vh;
   }
   .react-calendar__tile {
     width: 64px;
@@ -67,8 +67,8 @@ const Dashboard = ({
       </ContainerLeft>
 
       <ContainerRight>
-        <SearchFlorist locations={locations} />
-        <CurrentAppointments
+       <SearchFlorist locations={locations} />
+       <CurrentAppointments
           appointments={appointments}
           canAppList={canAppList}
           cancelAppointment={cancelAppointment}
