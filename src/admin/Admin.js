@@ -1,8 +1,17 @@
 import { Component } from 'react';
 import axios from "axios"
-import CurrentAppointment from 'components/bookings/current-appointment.component';
 import Dashboard from "components/bookings/dashboard.component";
+//import auth from 'redux/actions/userActions';
 
+//function AdminPage (props) {
+//  const [isAdmin, setIsAdmin] = useState(false);
+//  const [florist, setFlorist] = useState(null);
+//  const [currentAppointment, setCurrentAppointment] = useState([]);
+//  const [upcomingAppointments, setUpcomingAppointments] = useState([]);
+//  useEffect(()=> {
+//    const [isAdmin, florist, currentAppointment, upcomingAppointments] //    = state;
+// }, []);
+// }
 
 class AdminPage extends Component {
   constructor(props) {
@@ -52,8 +61,8 @@ class AdminPage extends Component {
 
     return (
       <div className="adminPage">
-      {
-        auth ? (
+      {/* {
+        auth ? ( */}
         <div className="adminPage__container">
           <div className="adminPage__header">
             <h3>Administrator Dashboard</h3>
@@ -62,7 +71,7 @@ class AdminPage extends Component {
             <Dashboard />
           </div>
         </div>
-        ) : <h4>You must be an administrator to access this page.</h4>}
+        {/* ) : <h4>You must be an administrator to access this page.</h4>} */}
       </div>
     )
   }

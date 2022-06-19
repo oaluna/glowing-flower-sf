@@ -43,25 +43,27 @@ const CardSlider = styled(Slider)`
   }
 `;
 const Card = styled.div(() => [
-  `backdrop-filter: blur(12px);`,
-  tw`h-full hover:shadow-xl flex! flex-col sm:border-none w-3 sm:rounded-tl-4xl sm:rounded-br-5xl relative outline-none shadow-none`,
+  `backdrop-filter: blur(24px);
+  max-width: 20vw;
+  margin-right: 15px;`,
+  tw`h-full shadow-sm hover:shadow-xl flex! flex-col sm:border-none  sm:rounded-tl-4xl sm:rounded-br-5xl relative outline-none shadow-none`,
 ]);
 const CardImage = styled.div((props) => [
   `background-image: url("${props.imageSrc}");
   z-index:40;`,
-  `background-color:  background: linear-gradient(135deg, #9495fa, #9c6df4 );`,
-  tw`w-full h-56 sm:h-64 bg-cover bg-center rounded sm:rounded-none sm:rounded-tl-4xl`,
+  `background-color: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);`,
+  tw`max-w-full h-56 sm:h-64 bg-cover bg-center rounded sm:rounded-none sm:rounded-tl-4xl`,
 ]);
 const BackgroundImageOverlay = styled.div(() => [
   `background-size: cover;
 background-position:center;
-background: linear-gradient(145deg, rgba(32,42,68, 1) 10%, rgba(32, 42, 68, 0.9) 84%);
+background: linear-gradient(315deg, #bdcad9 0%, #e1dada 74%);
+;
 
 opacity: 1;
 border: none;
 position: absolute;
-z-index: 50;
-mix-blend-mode: screen;
+z-index: 10;
 `,
   tw`w-full h-56 sm:h-64 bg-cover bg-center rounded sm:rounded-none sm:rounded-tl-4xl`,
 ]);
@@ -140,7 +142,9 @@ export default () => {
 
               <TextInfo>
                 <TitleReviewContainer>
-                  <Title>{product.title}</Title>
+                  <Title>
+                    <em>{product.title}</em>
+                  </Title>
                   <RatingsInfo>
                     <StarIcon />
                     <Rating>{product.rating}</Rating>
